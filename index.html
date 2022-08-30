@@ -9,7 +9,7 @@
   <meta name="twitter:image" content="https://yudalii.github.io/images/territorial-income-distribution-in-the-city-of-barcelona.png"/>
   <meta name="description" content="Barcelona territorial income distribution choropleth map">
 
-  <title> 1. Plotting Barcelona income distribution by neighborhoods </title>
+  <title> Plotting Barcelona income distribution by neighborhoods </title>
   <link rel="canonical" href="https://yudalii.github.io">
     <meta name="theme-color" content="#333333">
 
@@ -72,7 +72,7 @@
         Here we only present the final results, detailed technical implementation explaination is available in my  
         <a href= BCN_choropleth_maps.html style="color: blue"> Jupyter Notebook</a>.
       </p>
-      <h2>  Income distribution in the city of Barcelona</h2>
+      <h2> 1. Income distribution in the city of Barcelona</h2>
       <p> The first dataset that we are going to analyze is the 
         <a href="https://opendata-ajuntament.barcelona.cat/data/en/dataset/est-renda-familiar" style="color: blue"> Renta Familiar Disponible (RFD) index dataset</a>,
         this dataset contains the Disposable Family Income Index by Neighborhood, the most recent one is from year 2017.
@@ -83,7 +83,6 @@
           <tr><td colspan="6" bgcolor="#000000"><script language="javascript">document.write('<img src="' + whpath + 'images/cpbk.gif" border="0" width="100%" height="2">')</script></td></tr>
           <tr>
           <td nowrap colspan="4" class="WhadsColVar1" valign="bottom">Neighborhoods</td>
-          <td nowrap class="WhadsColVar1" align="right" valign="bottom">Population&nbsp;&nbsp;</td>
           <td nowrap class="WhadsColVar1" align="right" valign="bottom">RFD Index&nbsp;&nbsp;<br>Barcelona = 100&nbsp;&nbsp;</td>
           </tr>
           <tr><td colspan="6" bgcolor="#000000"><script language="javascript">document.write('<img src="' + whpath + 'images/cpbk.gif" border="0" width="100%" height="1">')</script></td></tr>
@@ -94,7 +93,6 @@
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">BARCELONA&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">1.625.137&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">100,0&nbsp;&nbsp;</td>
           </tr>
           <tr>
@@ -104,367 +102,294 @@
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">1. el Raval&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">47.986&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">71,2&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">2. el Barri Gòtic&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">16.240&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">106,1&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">3. la Barceloneta&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">15.101&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">79,6&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">4. Sant Pere, Santa Caterina i la Ribera&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">22.923&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">99,4&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">5. el Fort Pienc&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">32.048&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">106,5&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">6. la Sagrada Família&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">51.651&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">101,8&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">7. la Dreta de l'Eixample&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">44.246&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">175,9&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">8. l'Antiga Esquerra de l'Eixample&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">42.512&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">137,2&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">9. la Nova Esquerra de l'Eixample&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">58.315&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">110,2&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">10. Sant Antoni&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">38.412&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">104,2&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">11. el Poble Sec - AEI Parc de Montjuïc&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">40.358&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">82,2&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">12. la Marina del Prat Vermell - AEI Zona Franca&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">1.151&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">40,0&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">13. la Marina de Port&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">30.622&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">69,3&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">14. la Font de la Guatlla&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">10.422&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">82,9&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">15. Hostafrancs&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">15.949&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">99,0&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">16. la Bordeta&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">18.561&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">79,0&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">17. Sants - Badal&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">24.047&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">81,0&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">18. Sants&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">41.244&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">99,0&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">19. les Corts&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">46.104&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">120,0&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">20. la Maternitat i Sant Ramon&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">23.980&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">114,2&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">21. Pedralbes&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">12.117&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">248,8&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">22. Vallvidrera, el Tibidabo i les Planes&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">4.689&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">144,1&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">23. Sarrià&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">25.106&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">193,6&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">24. les Tres Torres&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">16.660&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">215,8&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">25. Sant Gervasi - la Bonanova&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">25.909&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">184,6&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">26. Sant Gervasi - Galvany&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">47.753&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">192,1&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">27. el Putxet i el Farró&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">29.617&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">144,6&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">28. Vallcarca i els Penitents&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">15.615&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">112,5&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">29. el Coll&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">7.428&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">87,0&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">30. la Salut&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">13.207&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">109,9&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">31. la Vila de Gràcia&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">50.885&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">104,4&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">32. el Camp d'en Grassot i Gràcia Nova&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">34.431&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">105,7&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">33. el Baix Guinardó&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">25.734&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">92,0&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">34. Can Baró&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">9.020&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">83,3&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">35. el Guinardó&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">36.538&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">79,1&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">36. la Font d'en Fargues&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">9.390&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">92,5&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">37. el Carmel&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">31.583&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">54,2&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">38. la Teixonera&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">11.634&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">73,7&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">39. Sant Genís dels Agudells&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">6.971&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">84,1&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">40. Montbau&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">5.171&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">79,8&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">41. la Vall d'Hebron&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">5.792&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">95,8&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">42. la Clota&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">611&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">93,5&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">43. Horta&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">26.743&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">79,8&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">44. Vilapicina i la Torre Llobeta&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">25.618&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">63,8&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">45. Porta&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">25.046&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">64,4&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">46. el Turó de la Peira&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">15.506&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">51,9&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">47. Can Peguera&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">2.233&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">51,5&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">48. la Guineueta&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">15.247&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">53,8&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">49. Canyelles&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">6.863&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">52,2&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">50. les Roquetes&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">15.648&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">49,7&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">51. Verdun&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">12.368&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">51,3&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">52. la Prosperitat&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">26.398&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">56,0&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">53. la Trinitat Nova&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">7.271&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">48,2&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">54. Torre Baró&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">2.859&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">46,5&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">55. Ciutat Meridiana&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">10.369&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">38,6&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">56. Vallbona&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">1.379&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">40,9&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">57. la Trinitat Vella&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">10.006&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">47,1&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">58. Baró de Viver&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">2.539&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">68,9&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">59. el Bon Pastor&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">12.582&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">65,1&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">60. Sant Andreu&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">57.223&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">77,7&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">61. la Sagrera&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">29.031&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">77,1&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">62. el Congrés i els Indians&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">14.141&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">75,1&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">63. Navas&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">22.171&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">81,6&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">64. el Camp de l'Arpa del Clot&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">38.371&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">81,7&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">65. el Clot&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">27.089&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">83,6&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">66. el Parc i la Llacuna del Poblenou&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">15.204&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">100,4&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">67. la Vila Olímpica del Poblenou&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">9.404&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">164,2&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">68. el Poblenou&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">33.931&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">99,9&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">69. Diagonal Mar i el Front Marítim del Poblenou&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">13.710&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">150,1&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">70. el Besòs i el Maresme&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">22.893&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">60,4&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">71. Provençals del Poblenou&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">20.649&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">102,3&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">72. Sant Martí de Provençals&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">26.187&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">67,4&nbsp;&nbsp;</td>
           </tr>
           <tr>
           <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">73. la Verneda i la Pau&nbsp;&nbsp;</td>
-          <td nowrap class="WhadsDades" align="right" valign="bottom">28.725&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">57,0&nbsp;&nbsp;</td>
           </tr>
           <tr><td colspan="6" bgcolor="#000000"><script language="javascript">document.write('<img src="' + whpath + 'images/cpbk.gif" border="0" width="100%" height="2">')</script></td></tr>
@@ -508,9 +433,9 @@
         different colorscale. 
       </p>
       <p>
-        <iframe id="inlineFrameExample" title="Inline Frame Example" width="450" height="500"
+        <iframe id="inlineFrameExample" title="Inline Frame Example" width="400" height="500"
         src= "choropleth maps/bcn_renta_2007.html"> </iframe>
-        <iframe id="inlineFrameExample" title="Inline Frame Example" width="450" height="500"
+        <iframe id="inlineFrameExample" title="Inline Frame Example" width="400" height="500"
         src= "choropleth maps/bcn_renta_change.html"> </iframe>
       </p>
       <p>   
@@ -526,19 +451,34 @@
         north east part of the city have experienced a decrease in RFD index. In 2017, most of the
         low income neighborhoods are even relatively poorer than 10 decades ago. 
       </p>
+      <p>
+        Besides RFD index dataset, we also have <a href= "https://ajuntament.barcelona.cat/estadistica/angles/Estadistiques_per_temes/Economia/Renda_i_tributs/Renda_disponible_llars/Anual/T012.htm" 
+        style="color: blue">disposable household income per capita</a> by neighborhood available in public,
+        the oldest one is from year 2015 and the most recent one is from year 2019. Choropleth maps below indicates the 
+        disposable income of these two years. 
+      </p>
+      <p>
+        <iframe id="inlineFrameExample" title="Inline Frame Example" width="400" height="500"
+        src= "choropleth maps/disposable_income_15.html"> </iframe>
+        <iframe id="inlineFrameExample" title="Inline Frame Example" width="400" height="500"
+        src= "choropleth maps/disposable_income_19.html"> </iframe>
+      </p>
+      <p>
+        The absolute value of disposable income in 2019 is clearly higher than in 2015, however, 
+        the overall distribution is basically the same as with the RFD index choropleth map of year 2017 and 2007. 
+        Most of the highest income neighborhoods are in the district of Sarrià-Sant Gervasi and 
+        most of the lowest income neighborhoods are in Nou barris. 
+      </p>
 
       <br> 
       <br> 
       <br> 
-      <h2>  2. Plotting other demographic and relevant indicators in the city of Barcelona</h2>
-
-      <div
-      data-lyket-type="clap"
-      data-lyket-namespace="blog"
-      data-lyket-id="medium-clap-button"
-      data-lyket-template="medium"
-    ></div>
-    
+      <h2>  2. Other demographic and relevant indicators in the city of Barcelona</h2>
+    <p>
+      In this section, we plot other demographic and relevant indicators. The first dataset we use is the 
+    </p>
+    <br> 
+    <br> 
     <applause-button style="width: 60px;height: 60px; margin: 0 auto;"/>
     <br> 
     <br> 
