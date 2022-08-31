@@ -19,6 +19,11 @@
   <link rel="stylesheet" href="https://diegoquintanav.github.io/theme/css/theme.css">
   <link rel="stylesheet" href="https://unpkg.com/applause-button/dist/applause-button.css">
   <script src="https://unpkg.com/applause-button/dist/applause-button.js"></script>
+  <script>
+    function resizeIframe(obj) {
+      obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+    }
+  </script>
 
   <link rel="alternate" type="application/atom+xml" title="Full Atom Feed"
         href="https://diegoquintanav.github.io/feeds/all.atom.xml">
@@ -70,7 +75,8 @@
         and other demographic indicators in the city of Barcelona obtained from <a href="https://opendata-ajuntament.barcelona.cat/en/" style="color: blue">Barcelona open data repository</a> using Python's 
         <a href="http://python-visualization.github.io/folium/" style="color: blue" >Folium</a> library. 
         Here we only present the final results, detailed technical implementation explaination is available in my  
-        <a href= BCN_choropleth_maps.html style="color: blue"> Jupyter Notebook</a>.
+        <a href= BCN_choropleth_maps.html style="color: blue"> Jupyter Notebook</a>, 
+        and the source code is available in my <a href= "https://github.com/yudalii/yudalii.github.io" style="color: blue"> Github repository</a>.
       </p>
       <h2> 1. Income distribution in the city of Barcelona</h2>
       <p> The first dataset that we are going to analyze is the 
@@ -141,11 +147,11 @@
           <td nowrap class="WhadsDades" align="right" valign="bottom">104,2&nbsp;&nbsp;</td>
           </tr>
           <tr>
-          <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">11. el Poble Sec - AEI Parc de Montjuïc&nbsp;&nbsp;</td>
+          <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">11. el Poble Sec&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">82,2&nbsp;&nbsp;</td>
           </tr>
           <tr>
-          <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">12. la Marina del Prat Vermell - AEI Zona Franca&nbsp;&nbsp;</td>
+          <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">12. la Marina del Prat Vermell&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">40,0&nbsp;&nbsp;</td>
           </tr>
           <tr>
@@ -373,7 +379,7 @@
           <td nowrap class="WhadsDades" align="right" valign="bottom">99,9&nbsp;&nbsp;</td>
           </tr>
           <tr>
-          <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">69. Diagonal Mar i el Front Marítim del Poblenou&nbsp;&nbsp;</td>
+          <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">69. Diagonal Mar i el Front Marítim&nbsp;&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">150,1&nbsp;&nbsp;</td>
           </tr>
           <tr>
@@ -397,7 +403,6 @@
           <tr><td colspan="6" class="WhadsNotaVar1" valign="bottom">Source: Ajuntament de Barcelona. Oficina Municipal de Dades.</td></tr>
           <tr><td colspan="6" nowrap class="WhadsVoidVar1" valign="bottom">&nbsp;</td></tr>
           </table>
-
         The RFD index of Barcelona city is 100, therefore neighborhoods with RFD index lower than 100 represent that 
         their RFD index are below average of the city and the same logic goes with neighborhoods with RFD index higher or equall than 100. 
         Today, Barcelona contains 73 different neighborhoods, to better illustrate the RFD index by neighborhoods, we plot this data onto a choropleth map. 
@@ -411,10 +416,11 @@
         By placing the mouse cursor or clicking the neighborhood you can see the associated neighborhood name and its RFD index.
       </p>
       <p>
-        <iframe id="inlineFrameExample" title="Inline Frame Example" width="450" height="500"
+        <iframe id="inlineFrameExample" title="Inline Frame Example" width="400" height="500"
         src= "choropleth maps/bcn_renta_2017.html"> </iframe>
-        <iframe id="inlineFrameExample" title="Inline Frame Example" width="450" height="500"
+        <iframe id="inlineFrameExample" title="Inline Frame Example" width="400" height="500"
         src= "choropleth maps/bcn_renta_2017_2.html"> </iframe>
+
       </p>
       <p> As we can observe, most of the neighborhoods in the north east or south part of the city seem to 
         have RFD index lower than average and the highest RFD index neighborhoods are located in the north east
@@ -475,7 +481,23 @@
       <br> 
       <h2>  2. Other demographic and relevant indicators in the city of Barcelona</h2>
     <p>
-      In this section, we plot other demographic and relevant indicators. The first dataset we use is the 
+      In this section, we plot other demographic and relevant indicators. The firs two dataset we use is the 
+      <a href= "https://opendata-ajuntament.barcelona.cat/data/en/dataset/est-demo-taxa-immigracio" 
+      style="color: blue"> Immigration registration rate</a> (‰ inhabitants) and 
+      <a href= "https://opendata-ajuntament.barcelona.cat/data/en/dataset/est-demo-taxa-natalitat" 
+      style="color: blue">Birth rate</a> (‰ inhabitants) of the city of Barcelona. 
+      These two rate is the relation between the number of immigration or birth registration in one year 
+      and the population of the same year per thousand inhabitants. Choropleth maps below plots these two rates
+      for the most recent available year 2020. 
+    </p>
+    <p>
+    <iframe width="45%" height="500" src= "choropleth maps/immigration_rate_20.html"> </iframe>
+    <iframe width="45%" height="500" src= "choropleth maps/birth_rate_20.html"> </iframe>
+    </p>
+    <p>
+      Most of the neighborhoods have immigration rate between 30 to 50 ‰ inhabitants and birth rate between 
+      4 to 8 ‰ inhabitants. 
+      
     </p>
     <br> 
     <br> 
