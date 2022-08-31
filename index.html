@@ -19,16 +19,7 @@
   <link rel="stylesheet" href="https://diegoquintanav.github.io/theme/css/theme.css">
   <link rel="stylesheet" href="https://unpkg.com/applause-button/dist/applause-button.css">
   <script src="https://unpkg.com/applause-button/dist/applause-button.js"></script>
-  <script>
-    function resizeIframe(obj) {
-      obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
-    }
-  </script>
 
-  <link rel="alternate" type="application/atom+xml" title="Full Atom Feed"
-        href="https://diegoquintanav.github.io/feeds/all.atom.xml">
-  <link rel="alternate" type="application/rss+xml" title="Categories RSS Feed"
-        href="https://diegoquintanav.github.io/feeds/data-science.rss.xml">  
   <script>
     (function(i, s, o, g, r, a, m) {
       i['GoogleAnalyticsObject'] = r;
@@ -328,23 +319,23 @@
           <td nowrap class="WhadsDades" align="right" valign="bottom">38,6&nbsp;&nbsp;</td>
           </tr>
           <tr>
-          <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">56. Vallbona&nbsp;</td>
+          <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">56.Vallbona&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">40,9&nbsp;&nbsp;</td>
           </tr>
           <tr>
-          <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">57. la Trinitat Vella&nbsp;</td>
+          <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">57.la Trinitat Vella&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">47,1&nbsp;&nbsp;</td>
           </tr>
           <tr>
-          <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">58. Baró de Viver&nbsp;</td>
+          <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">58.Baró de Viver&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">68,9&nbsp;&nbsp;</td>
           </tr>
           <tr>
-          <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">59. el Bon Pastor&nbsp;</td>
+          <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">59.el Bon Pastor&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">65,1&nbsp;&nbsp;</td>
           </tr>
           <tr>
-          <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">60. Sant Andreu&nbsp;</td>
+          <td nowrap colspan="4" class="WhadsRowVar3" valign="bottom">60.Sant Andreu&nbsp;</td>
           <td nowrap class="WhadsDades" align="right" valign="bottom">77,7&nbsp;&nbsp;</td>
           </tr>
           <tr>
@@ -440,7 +431,7 @@
         different colorscale. 
       </p>
       <p>
-        <iframe width="90%" height="500"
+        <iframe width="95%" height="500"
         src= "choropleth maps/bcn_renta_2007.html"> </iframe>
         <iframe id="inlineFrameExample" title="Inline Frame Example" width="90%" height="500"
         src= "choropleth maps/bcn_renta_change.html"> </iframe>
@@ -465,9 +456,9 @@
         disposable income of these two years. 
       </p>
       <p>
-        <iframe width="90%" height="500"
+        <iframe width="95%" height="500"
         src= "choropleth maps/disposable_income_15.html"> </iframe>
-        <iframe width="90%" height="500"
+        <iframe width="95%" height="500"
         src= "choropleth maps/disposable_income_19.html"> </iframe>
       </p>
       <p>
@@ -486,31 +477,51 @@
       <a href= "https://opendata-ajuntament.barcelona.cat/data/en/dataset/est-demo-taxa-immigracio" 
       style="color: blue"> Immigration registration rate</a> (‰ inhabitants) and 
       <a href= "https://opendata-ajuntament.barcelona.cat/data/en/dataset/est-demo-taxa-natalitat" 
-      style="color: blue">Birth rate</a> (‰ inhabitants) of the city of Barcelona. 
+      style="color: blue">Birth rate</a> (‰ inhabitants) in the city of Barcelona. 
       These two rate is the relation between the number of immigration or birth registration in one year 
       and the population of the same year per thousand inhabitants. Choropleth maps below plots these two rates
       for the most recent available year 2020. 
     </p>
     <p>
-    <iframe width="90%" height="500" src= "choropleth maps/immigration_rate_20.html"> </iframe>
-    <iframe width="90%" height="500" src= "choropleth maps/birth_rate_20.html"> </iframe>
+    <iframe width="95%" height="500" src= "choropleth maps/immigration_rate_20.html"> </iframe>
+    <iframe width="95%" height="500" src= "choropleth maps/birth_rate_20.html"> </iframe>
     </p>
     <p>
       Most of the neighborhoods have immigration rate between 30 to 50 ‰ inhabitants and birth rate between 
-      4 to 8 ‰ inhabitants. 
-      
+      4 to 8 ‰ inhabitants. Compared to the income choropleth maps above, immigration and birth rate do not seem to 
+      have a clear correlationship with income level of the neighborhoods. The highest immigration rate is in a low
+      income neighborhood, el Barri Gòtic, and the lowest immigration rate is also in also in a low
+      income neighborhood, Can Peguera. Most of the highest birth rates are in low income neighborhoods, but, there 
+      are also plenty of low income neighborhoods with very low birth rates. 
     </p>
 
     <p>
-     Another intersting dataset that we plot is the 
+     Another intersting dataset that we can plot is the 
      <a href= "https://ajuntament.barcelona.cat/estadistica/angles/Estadistiques_per_territori/Barris/Salut/Indicadors_salut_publica/t39.htm" 
      style="color: blue">life expectancy rate</a> by neighborhoods. This life expectancy rate is based on the average of 5 years period.
      The most recent one is from year 2015 to 2019. 
-
-
     </p>
     <p>
-      <iframe width="90%" height="500" src= "choropleth maps/life_expectancy_19.html"> </iframe>
+      <iframe width="95%" height="500" src= "choropleth maps/life_expectancy_19.html"> </iframe>
+    </p>
+    <p>
+      Life expectancy difference among neighborhoods is pretty significant, with lowest neighborhood having only 78.1 years of
+      liefe expectancy and highest neighborhood 87.7 years of life expectancy.  
+      Most of the high income neighborhoods have high life expectancy, with Vallvidrera, el Tibidabo i les Planes as an exception.
+      Most part of the city, including the majority of neighborhoods with below average RFD index have a life expectancy around 85 years.
+      The 3 lowest life expectancy neighborhoods are in the lowest income neighborhoods, which are Vallbona, 
+      la Trinitat Nova, and la Marina del Prat Vermell, with life exectancy of 78.1, 79.6, and 79.8 years respectively. 
+      The 3 highest life expectancy neighborhoods are Pedralbes, la Vila Olímpica del Poblenou, and
+      la Maternitat i Sant Ramon, with life exectancy of 87.7, 87.4, and 86.7 years respectively. Their corrsponding 
+      RFD index in year 2017 are, 248.8, 164.2, and 114.2 respectively. 
+    </p>
+    <p>
+      Finally, we plot a cluster map of <a href= "https://opendata-ajuntament.barcelona.cat/data/en/dataset/sanitat-hospitals-atencio-primaria" 
+      style="color: blue">hospitals and primary health services of the city of Barcelona</a>. 
+      Most of the hospitals and primary health services are in the center of the city, high income areas seem to have few 
+      hospitals and primary health services more than low income areas, from my perspective this difference does 
+      not seem to be very significant and no further insights can be drawn from the cluster map. 
+
     </p>
     <p>
       <iframe width="95%" height="500" src= "choropleth maps/hospitals_cluster.html"> </iframe>
@@ -519,19 +530,30 @@
     <br> 
     <br> 
     <h2>Conclusions</h2>
+    <p>
+     In conlcusion, in this article we have provided some choropleth maps to illustrate some intersting statistics in the 
+     city of Barcelona, and some observations are also provided based on the results of the maps. The main goal of this article
+     is to introduce a powerful visualization technique to help visualize 
+    </p>
+    <p>
+      Thank you for reading until here! Feel free to contact me for discussion or any doubt regarding the code!
+    </p>
 
     <br> 
     <br> 
-    <applause-button style="width: 60px;height: 60px; margin: 0 auto;"/>
-    <br> 
-    <br> 
+<p>
+  <applause-button style="width: 60px;height: 60px; margin: 0 auto;"/>
+</p>
+</div>
+</div>
 
-      <hr>
-      <footer>
-        <!-- start custom footer snippets -->
+
+<footer>
+<!-- start custom footer snippets -->
 <!-- end custom footer snippets -->
-<div class="page__footer-copyright">&copy; 2022 Yuda Li. </div>
-      </footer>
+<div class="page__footer-copyright" style="text-align:center" >&copy; 2022 Yuda Li. </div>
+</footer>
+
     </body>
 
 </html>
