@@ -1,0 +1,2694 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_64247a4fff9e4153aa4a7a95711b6f3a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_64247a4fff9e4153aa4a7a95711b6f3a" ></div>
+        
+</body>
+<script>    
+    
+            var map_64247a4fff9e4153aa4a7a95711b6f3a = L.map(
+                "map_64247a4fff9e4153aa4a7a95711b6f3a",
+                {
+                    center: [41.39, 2.17],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9cb47603de38415386c6bfbb8e52e288 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_64247a4fff9e4153aa4a7a95711b6f3a);
+        
+    
+            var marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55 = L.markerClusterGroup(
+                {}
+            );
+            map_64247a4fff9e4153aa4a7a95711b6f3a.addLayer(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+            var marker_8d12ccf4fe3e4276b96f6b7a12a17d00 = L.marker(
+                [41.385693845190495, 2.1316073419512267],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_7021fd5c87034e2f822ac2d6a9e389f8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7abbfb86bcec48f18fb266f501e90753 = $(`<div id="html_7abbfb86bcec48f18fb266f501e90753" style="width: 100.0%; height: 100.0%;">Hospital de Dia</div>`)[0];
+            popup_7021fd5c87034e2f822ac2d6a9e389f8.setContent(html_7abbfb86bcec48f18fb266f501e90753);
+        
+
+        marker_8d12ccf4fe3e4276b96f6b7a12a17d00.bindPopup(popup_7021fd5c87034e2f822ac2d6a9e389f8)
+        ;
+
+        
+    
+    
+            var marker_91067ed13a5643cbb1bbefdb2b3bd752 = L.marker(
+                [41.356077131947, 2.143293943034445],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_6a19b7552fdb4b7ca624db767bb5bd28 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_867f7e3a7af74c9ebfc44da4d8027abb = $(`<div id="html_867f7e3a7af74c9ebfc44da4d8027abb" style="width: 100.0%; height: 100.0%;">Clínica Sant Antoni</div>`)[0];
+            popup_6a19b7552fdb4b7ca624db767bb5bd28.setContent(html_867f7e3a7af74c9ebfc44da4d8027abb);
+        
+
+        marker_91067ed13a5643cbb1bbefdb2b3bd752.bindPopup(popup_6a19b7552fdb4b7ca624db767bb5bd28)
+        ;
+
+        
+    
+    
+            var marker_167c1c73374e48e4a501814678bc46f2 = L.marker(
+                [41.40113621820896, 2.1412163449618147],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_f60d89e2030a4cad8475725ba5ecb3b3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b9bb7a32e3d145758ece0ce92b3f25fe = $(`<div id="html_b9bb7a32e3d145758ece0ce92b3f25fe" style="width: 100.0%; height: 100.0%;">Centre Hospitalari Copèrnic</div>`)[0];
+            popup_f60d89e2030a4cad8475725ba5ecb3b3.setContent(html_b9bb7a32e3d145758ece0ce92b3f25fe);
+        
+
+        marker_167c1c73374e48e4a501814678bc46f2.bindPopup(popup_f60d89e2030a4cad8475725ba5ecb3b3)
+        ;
+
+        
+    
+    
+            var marker_a66a3456f40647a0b22f4a99c51e4e0c = L.marker(
+                [41.400456568684135, 2.148500292440888],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_401762198e584cac85800f17e507ecc8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9b468aa8509f4b86a6f971c45bef80b5 = $(`<div id="html_9b468aa8509f4b86a6f971c45bef80b5" style="width: 100.0%; height: 100.0%;">Hospital El Pilar - Institut Cardiovascular Sant Jordi</div>`)[0];
+            popup_401762198e584cac85800f17e507ecc8.setContent(html_9b468aa8509f4b86a6f971c45bef80b5);
+        
+
+        marker_a66a3456f40647a0b22f4a99c51e4e0c.bindPopup(popup_401762198e584cac85800f17e507ecc8)
+        ;
+
+        
+    
+    
+            var marker_bc635c0c69614ca0b1dd9cb5796e6f73 = L.marker(
+                [41.40045335150616, 2.138800439931985],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_4cfd2076300644258b77b13dc33e881d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bcb2b841204742a6a3a6d51b9815da7f = $(`<div id="html_bcb2b841204742a6a3a6d51b9815da7f" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primària Adrià</div>`)[0];
+            popup_4cfd2076300644258b77b13dc33e881d.setContent(html_bcb2b841204742a6a3a6d51b9815da7f);
+        
+
+        marker_bc635c0c69614ca0b1dd9cb5796e6f73.bindPopup(popup_4cfd2076300644258b77b13dc33e881d)
+        ;
+
+        
+    
+    
+            var marker_3228d4b9a1584602a1139db5a3592d5c = L.marker(
+                [41.41570648103172, 2.1378921010617598],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_de0cc98a2c4649f2b01d49a0589047af = L.popup({"maxWidth": "100%"});
+
+        
+            var html_52b5c3cbb2b2489bb8f95bd141e1aa79 = $(`<div id="html_52b5c3cbb2b2489bb8f95bd141e1aa79" style="width: 100.0%; height: 100.0%;">Hospital Quirónsalud Barcelona</div>`)[0];
+            popup_de0cc98a2c4649f2b01d49a0589047af.setContent(html_52b5c3cbb2b2489bb8f95bd141e1aa79);
+        
+
+        marker_3228d4b9a1584602a1139db5a3592d5c.bindPopup(popup_de0cc98a2c4649f2b01d49a0589047af)
+        ;
+
+        
+    
+    
+            var marker_d91920d1f27c4b15b708c4f40299f315 = L.marker(
+                [41.3828426660728, 2.153365428284767],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_1e9ec6553c7b4e39826f7b9652e60120 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_74e57ea691054cab96d3c2d8d653f6a0 = $(`<div id="html_74e57ea691054cab96d3c2d8d653f6a0" style="width: 100.0%; height: 100.0%;">Clínica Centro Médico Aragón</div>`)[0];
+            popup_1e9ec6553c7b4e39826f7b9652e60120.setContent(html_74e57ea691054cab96d3c2d8d653f6a0);
+        
+
+        marker_d91920d1f27c4b15b708c4f40299f315.bindPopup(popup_1e9ec6553c7b4e39826f7b9652e60120)
+        ;
+
+        
+    
+    
+            var marker_7426c05993af4add9f8bfe32f9bbe48e = L.marker(
+                [41.41019859412113, 2.176701437705301],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_d1cfa232ebd94f888cfbe577f201053e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d4ce96e9aad445e3a280469a3953a565 = $(`<div id="html_d4ce96e9aad445e3a280469a3953a565" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primària Sagrada Família</div>`)[0];
+            popup_d1cfa232ebd94f888cfbe577f201053e.setContent(html_d4ce96e9aad445e3a280469a3953a565);
+        
+
+        marker_7426c05993af4add9f8bfe32f9bbe48e.bindPopup(popup_d1cfa232ebd94f888cfbe577f201053e)
+        ;
+
+        
+    
+    
+            var marker_5e7ff34b706849c7be53f2935f8a51cf = L.marker(
+                [41.39766980618415, 2.1299351525099426],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_7f4d97d42af1417f87e9008f153c2a23 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_39e6f9aa9e6b4801bd212ca1da0b996b = $(`<div id="html_39e6f9aa9e6b4801bd212ca1da0b996b" style="width: 100.0%; height: 100.0%;">Instituto Oftalmológico Tres Torres</div>`)[0];
+            popup_7f4d97d42af1417f87e9008f153c2a23.setContent(html_39e6f9aa9e6b4801bd212ca1da0b996b);
+        
+
+        marker_5e7ff34b706849c7be53f2935f8a51cf.bindPopup(popup_7f4d97d42af1417f87e9008f153c2a23)
+        ;
+
+        
+    
+    
+            var marker_8f8f630d45024ffa9a1c9b21f8d278d8 = L.marker(
+                [41.40548450111436, 2.128381188050171],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_20b59652d85e470fac33d099b2e78f79 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5f0e45238a484710bb10be0fb7c782f7 = $(`<div id="html_5f0e45238a484710bb10be0fb7c782f7" style="width: 100.0%; height: 100.0%;">Centro Médico Teknon</div>`)[0];
+            popup_20b59652d85e470fac33d099b2e78f79.setContent(html_5f0e45238a484710bb10be0fb7c782f7);
+        
+
+        marker_8f8f630d45024ffa9a1c9b21f8d278d8.bindPopup(popup_20b59652d85e470fac33d099b2e78f79)
+        ;
+
+        
+    
+    
+            var marker_26ef7cec22364276aa30800f7c37d6dd = L.marker(
+                [41.41065182999176, 2.17865001498802],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_c783cbdf41874479a0a41eff3ff9a1bd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ec441bef2af54bd783a304e9f8a63d73 = $(`<div id="html_ec441bef2af54bd783a304e9f8a63d73" style="width: 100.0%; height: 100.0%;">Hospital de Dia Còrsega</div>`)[0];
+            popup_c783cbdf41874479a0a41eff3ff9a1bd.setContent(html_ec441bef2af54bd783a304e9f8a63d73);
+        
+
+        marker_26ef7cec22364276aa30800f7c37d6dd.bindPopup(popup_c783cbdf41874479a0a41eff3ff9a1bd)
+        ;
+
+        
+    
+    
+            var marker_a46b28dc82664d9fbf07483d7a371060 = L.marker(
+                [41.3852647692118, 2.126090851000616],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_a47b97b533154b1ab620948f79700b20 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ebf82e1b65884f879859af3c7965af5f = $(`<div id="html_ebf82e1b65884f879859af3c7965af5f" style="width: 100.0%; height: 100.0%;">Hospital Universitari Quirón Dexeus</div>`)[0];
+            popup_a47b97b533154b1ab620948f79700b20.setContent(html_ebf82e1b65884f879859af3c7965af5f);
+        
+
+        marker_a46b28dc82664d9fbf07483d7a371060.bindPopup(popup_a47b97b533154b1ab620948f79700b20)
+        ;
+
+        
+    
+    
+            var marker_a499f2130fc54274b40339cd064268da = L.marker(
+                [41.40196697142779, 2.121523780191905],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_bc3881beea7d463f8f44ced5555fe38a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4f063f6ea9374d008f4181a94c734c2b = $(`<div id="html_4f063f6ea9374d008f4181a94c734c2b" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primària Sarrià</div>`)[0];
+            popup_bc3881beea7d463f8f44ced5555fe38a.setContent(html_4f063f6ea9374d008f4181a94c734c2b);
+        
+
+        marker_a499f2130fc54274b40339cd064268da.bindPopup(popup_bc3881beea7d463f8f44ced5555fe38a)
+        ;
+
+        
+    
+    
+            var marker_013474c9eb3d4f05942507eb217c036c = L.marker(
+                [41.3987059201658, 2.1822703458787167],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_0697c9fc00fe42698f89278cff46d5b7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_62098de93e224d24a07daf0a51642305 = $(`<div id="html_62098de93e224d24a07daf0a51642305" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primària Carles I</div>`)[0];
+            popup_0697c9fc00fe42698f89278cff46d5b7.setContent(html_62098de93e224d24a07daf0a51642305);
+        
+
+        marker_013474c9eb3d4f05942507eb217c036c.bindPopup(popup_0697c9fc00fe42698f89278cff46d5b7)
+        ;
+
+        
+    
+    
+            var marker_bb54dc5e544740c99a04bbab5459301c = L.marker(
+                [41.40719107800594, 2.196927087468326],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_f541767662dd4890bc720add7a2f4917 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8b0bc952d0904b4c8635f677d1d9f5fe = $(`<div id="html_8b0bc952d0904b4c8635f677d1d9f5fe" style="width: 100.0%; height: 100.0%;">Policlínica ICOA - Instituto de Cirugia Ocular Avanzada</div>`)[0];
+            popup_f541767662dd4890bc720add7a2f4917.setContent(html_8b0bc952d0904b4c8635f677d1d9f5fe);
+        
+
+        marker_bb54dc5e544740c99a04bbab5459301c.bindPopup(popup_f541767662dd4890bc720add7a2f4917)
+        ;
+
+        
+    
+    
+            var marker_d18a925a0c574e36845f2bb055cde598 = L.marker(
+                [41.43495483454007, 2.186917319803586],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_ff7fe4073c2244568180c6e31da25d63 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ef2fbe130fbc49f281fb481da07368a6 = $(`<div id="html_ef2fbe130fbc49f281fb481da07368a6" style="width: 100.0%; height: 100.0%;">Cliníca Axisclínic *Sant Andreu</div>`)[0];
+            popup_ff7fe4073c2244568180c6e31da25d63.setContent(html_ef2fbe130fbc49f281fb481da07368a6);
+        
+
+        marker_d18a925a0c574e36845f2bb055cde598.bindPopup(popup_ff7fe4073c2244568180c6e31da25d63)
+        ;
+
+        
+    
+    
+            var marker_056f7ecdf39a476bb0ae7acfc76dbd12 = L.marker(
+                [41.38761794394156, 2.1387399569666004],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_48d5da60232b4c1da5753274fe755691 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d74fffa819304c85a97e07ad36f93589 = $(`<div id="html_d74fffa819304c85a97e07ad36f93589" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primària Montnegre</div>`)[0];
+            popup_48d5da60232b4c1da5753274fe755691.setContent(html_d74fffa819304c85a97e07ad36f93589);
+        
+
+        marker_056f7ecdf39a476bb0ae7acfc76dbd12.bindPopup(popup_48d5da60232b4c1da5753274fe755691)
+        ;
+
+        
+    
+    
+            var marker_f2bbd1d833824f1f90945236e42a9b2b = L.marker(
+                [41.41176677851338, 2.193049312588346],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_ffa6945b694d4a41bf3df02c58e804fe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e775665ff7334f40bac52aa6788de7a4 = $(`<div id="html_e775665ff7334f40bac52aa6788de7a4" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primària El Clot</div>`)[0];
+            popup_ffa6945b694d4a41bf3df02c58e804fe.setContent(html_e775665ff7334f40bac52aa6788de7a4);
+        
+
+        marker_f2bbd1d833824f1f90945236e42a9b2b.bindPopup(popup_ffa6945b694d4a41bf3df02c58e804fe)
+        ;
+
+        
+    
+    
+            var marker_aeb16348eac84184911762ed3159286e = L.marker(
+                [41.390333637003735, 2.180476543991248],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_54937c3a23a04dc1bc0d6349b8fbe6aa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_213290a434bc4184839acecabff0af96 = $(`<div id="html_213290a434bc4184839acecabff0af96" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primària Casc Antic</div>`)[0];
+            popup_54937c3a23a04dc1bc0d6349b8fbe6aa.setContent(html_213290a434bc4184839acecabff0af96);
+        
+
+        marker_aeb16348eac84184911762ed3159286e.bindPopup(popup_54937c3a23a04dc1bc0d6349b8fbe6aa)
+        ;
+
+        
+    
+    
+            var marker_2c754d310800467aac77aceea4795b41 = L.marker(
+                [41.411445154741465, 2.1567276831754065],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_1c407cc98c5b45f2845180ed177aa40e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3e404174663b4a5c93032fe836f2c117 = $(`<div id="html_3e404174663b4a5c93032fe836f2c117" style="width: 100.0%; height: 100.0%;">Hospital  Sociosanitari Mutuam Güell</div>`)[0];
+            popup_1c407cc98c5b45f2845180ed177aa40e.setContent(html_3e404174663b4a5c93032fe836f2c117);
+        
+
+        marker_2c754d310800467aac77aceea4795b41.bindPopup(popup_1c407cc98c5b45f2845180ed177aa40e)
+        ;
+
+        
+    
+    
+            var marker_3e26979acc23432084bfeb44c7d116ca = L.marker(
+                [41.38955539831457, 2.152194463242196],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_728e45e45e6e4486921671e57eebb736 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3682c2907d8b431082e165a4717f23be = $(`<div id="html_3682c2907d8b431082e165a4717f23be" style="width: 100.0%; height: 100.0%;">Hospital Clínic i Provincial</div>`)[0];
+            popup_728e45e45e6e4486921671e57eebb736.setContent(html_3682c2907d8b431082e165a4717f23be);
+        
+
+        marker_3e26979acc23432084bfeb44c7d116ca.bindPopup(popup_728e45e45e6e4486921671e57eebb736)
+        ;
+
+        
+    
+    
+            var marker_c740d17fc4bc4cc2ae242771e0e89813 = L.marker(
+                [41.42884278775608, 2.1569943945774512],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_9b9dcce897ff4be28dcde0642c901c20 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_65189a035f794836b650fdce77120485 = $(`<div id="html_65189a035f794836b650fdce77120485" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primària Horta</div>`)[0];
+            popup_9b9dcce897ff4be28dcde0642c901c20.setContent(html_65189a035f794836b650fdce77120485);
+        
+
+        marker_c740d17fc4bc4cc2ae242771e0e89813.bindPopup(popup_9b9dcce897ff4be28dcde0642c901c20)
+        ;
+
+        
+    
+    
+            var marker_ad6d91703a1a4a19bb5d59f8454fa309 = L.marker(
+                [41.420858819550936, 2.1550353094774626],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_014854ee0116422197919821679b7e73 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_432d3ea20fa14d82ae1e879f3efd060c = $(`<div id="html_432d3ea20fa14d82ae1e879f3efd060c" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primària El Carmel</div>`)[0];
+            popup_014854ee0116422197919821679b7e73.setContent(html_432d3ea20fa14d82ae1e879f3efd060c);
+        
+
+        marker_ad6d91703a1a4a19bb5d59f8454fa309.bindPopup(popup_014854ee0116422197919821679b7e73)
+        ;
+
+        
+    
+    
+            var marker_d93534eea90246668e8c5a33844b761f = L.marker(
+                [41.3618090328203, 2.136294923801782],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_d2400ad401e74b08b247fc48fd150131 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4a2b6f8be22046c7811a7a1683be3730 = $(`<div id="html_4a2b6f8be22046c7811a7a1683be3730" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primària de la Marina</div>`)[0];
+            popup_d2400ad401e74b08b247fc48fd150131.setContent(html_4a2b6f8be22046c7811a7a1683be3730);
+        
+
+        marker_d93534eea90246668e8c5a33844b761f.bindPopup(popup_d2400ad401e74b08b247fc48fd150131)
+        ;
+
+        
+    
+    
+            var marker_4f306d3f92c44b4eb73ba25a9a402ae5 = L.marker(
+                [41.40535365944363, 2.130891065672255],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_e23daf9778a2417e9ed8f0fcd6f19c64 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_71b43dc89c9b48baa9da2f764f8b670f = $(`<div id="html_71b43dc89c9b48baa9da2f764f8b670f" style="width: 100.0%; height: 100.0%;">Clínica Bonanova de Cirurgia Ocular</div>`)[0];
+            popup_e23daf9778a2417e9ed8f0fcd6f19c64.setContent(html_71b43dc89c9b48baa9da2f764f8b670f);
+        
+
+        marker_4f306d3f92c44b4eb73ba25a9a402ae5.bindPopup(popup_e23daf9778a2417e9ed8f0fcd6f19c64)
+        ;
+
+        
+    
+    
+            var marker_6abe0babb9cf41cd8698a6ee36bf4388 = L.marker(
+                [41.39804905348276, 2.1179951229334635],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_91e2b02b4a474b418c30bdc03a6ce43a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1e63d48cb12e4904bad90ce6bf31b118 = $(`<div id="html_1e63d48cb12e4904bad90ce6bf31b118" style="width: 100.0%; height: 100.0%;">Clínica Creu Blanca</div>`)[0];
+            popup_91e2b02b4a474b418c30bdc03a6ce43a.setContent(html_1e63d48cb12e4904bad90ce6bf31b118);
+        
+
+        marker_6abe0babb9cf41cd8698a6ee36bf4388.bindPopup(popup_91e2b02b4a474b418c30bdc03a6ce43a)
+        ;
+
+        
+    
+    
+            var marker_bb9491c8482e429a910686187ee26876 = L.marker(
+                [41.41608144491084, 2.140673416896396],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_da1a1fdf0df54f4fb25be908031da788 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f926c8460ee142cabe9f37bf150a428c = $(`<div id="html_f926c8460ee142cabe9f37bf150a428c" style="width: 100.0%; height: 100.0%;">Hospital de Dia Sant Jordi</div>`)[0];
+            popup_da1a1fdf0df54f4fb25be908031da788.setContent(html_f926c8460ee142cabe9f37bf150a428c);
+        
+
+        marker_bb9491c8482e429a910686187ee26876.bindPopup(popup_da1a1fdf0df54f4fb25be908031da788)
+        ;
+
+        
+    
+    
+            var marker_3efe41db7161495db718a1742de3032b = L.marker(
+                [41.401672449023216, 2.128538075607511],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_707223f6932f49e4a3d20a492b7727c2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d886d4ff1ac4431393d00615923dc3e2 = $(`<div id="html_d886d4ff1ac4431393d00615923dc3e2" style="width: 100.0%; height: 100.0%;">Clinica del Son Estivill</div>`)[0];
+            popup_707223f6932f49e4a3d20a492b7727c2.setContent(html_d886d4ff1ac4431393d00615923dc3e2);
+        
+
+        marker_3efe41db7161495db718a1742de3032b.bindPopup(popup_707223f6932f49e4a3d20a492b7727c2)
+        ;
+
+        
+    
+    
+            var marker_d536381ace1e4a60a5b67cc3a964e5ce = L.marker(
+                [41.43300227670544, 2.1870018182458217],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_611f92007cf642699ea06edf56ae0857 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2707784075b4488eb0a984effbb2043c = $(`<div id="html_2707784075b4488eb0a984effbb2043c" style="width: 100.0%; height: 100.0%;">Clínica Coroleu</div>`)[0];
+            popup_611f92007cf642699ea06edf56ae0857.setContent(html_2707784075b4488eb0a984effbb2043c);
+        
+
+        marker_d536381ace1e4a60a5b67cc3a964e5ce.bindPopup(popup_611f92007cf642699ea06edf56ae0857)
+        ;
+
+        
+    
+    
+            var marker_3df0d673413049bd9cd8371865e9c295 = L.marker(
+                [41.41251052614851, 2.136094653004304],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_4e52840ab8324b09bd1e8742a50fa960 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e9bdaef09bdc4c61ae52fe56b4ec8fcf = $(`<div id="html_e9bdaef09bdc4c61ae52fe56b4ec8fcf" style="width: 100.0%; height: 100.0%;">Clínica Serveis Clinics S.A.U</div>`)[0];
+            popup_4e52840ab8324b09bd1e8742a50fa960.setContent(html_e9bdaef09bdc4c61ae52fe56b4ec8fcf);
+        
+
+        marker_3df0d673413049bd9cd8371865e9c295.bindPopup(popup_4e52840ab8324b09bd1e8742a50fa960)
+        ;
+
+        
+    
+    
+            var marker_dd09c17b11df459895018d37112d259a = L.marker(
+                [41.43484056890944, 2.157429990506305],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_3f8d4c71c1ce47f3bdcae5529d4b6085 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0aaf1ac583be40c5a799ac9eb4773a1a = $(`<div id="html_0aaf1ac583be40c5a799ac9eb4773a1a" style="width: 100.0%; height: 100.0%;">Centre d'Urgències d'Atenció Primària Horta</div>`)[0];
+            popup_3f8d4c71c1ce47f3bdcae5529d4b6085.setContent(html_0aaf1ac583be40c5a799ac9eb4773a1a);
+        
+
+        marker_dd09c17b11df459895018d37112d259a.bindPopup(popup_3f8d4c71c1ce47f3bdcae5529d4b6085)
+        ;
+
+        
+    
+    
+            var marker_75b11bbdf1bb4c72a9aebac3003a4437 = L.marker(
+                [41.39475232863729, 2.136253299497502],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_4239b852f0e743acb33abeac637aff4c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_370921a997b14e49b91022a0c6d4289a = $(`<div id="html_370921a997b14e49b91022a0c6d4289a" style="width: 100.0%; height: 100.0%;">Clínica Dermatològica Dermik</div>`)[0];
+            popup_4239b852f0e743acb33abeac637aff4c.setContent(html_370921a997b14e49b91022a0c6d4289a);
+        
+
+        marker_75b11bbdf1bb4c72a9aebac3003a4437.bindPopup(popup_4239b852f0e743acb33abeac637aff4c)
+        ;
+
+        
+    
+    
+            var marker_25599ecb8c6f49baaeff425162c015be = L.marker(
+                [41.42804943371883, 2.1434499797388105],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_05aa1ffe32be49ad9f952347ac5978a1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_944780e20c2d4bb8a8f0cdb84349bdc6 = $(`<div id="html_944780e20c2d4bb8a8f0cdb84349bdc6" style="width: 100.0%; height: 100.0%;">Vall d'Hebron Barcelona Hospital Campus</div>`)[0];
+            popup_05aa1ffe32be49ad9f952347ac5978a1.setContent(html_944780e20c2d4bb8a8f0cdb84349bdc6);
+        
+
+        marker_25599ecb8c6f49baaeff425162c015be.bindPopup(popup_05aa1ffe32be49ad9f952347ac5978a1)
+        ;
+
+        
+    
+    
+            var marker_3d39ce949d604998b26b0f01483766ef = L.marker(
+                [41.41056757619079, 2.154811776742894],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_1c926f772aa94bf5b121bfccbc4f0c51 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_758bb68b1cf4450392833b2767a879ce = $(`<div id="html_758bb68b1cf4450392833b2767a879ce" style="width: 100.0%; height: 100.0%;">Hospital de l'Esperança</div>`)[0];
+            popup_1c926f772aa94bf5b121bfccbc4f0c51.setContent(html_758bb68b1cf4450392833b2767a879ce);
+        
+
+        marker_3d39ce949d604998b26b0f01483766ef.bindPopup(popup_1c926f772aa94bf5b121bfccbc4f0c51)
+        ;
+
+        
+    
+    
+            var marker_1c8944cd1c7d433ca9088900c7c57c40 = L.marker(
+                [41.4469756577075, 2.1832857637063765],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_40c5de65fed14e168b748570f4900655 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9d7be8e62bb44aa1b82d05760ac9386f = $(`<div id="html_9d7be8e62bb44aa1b82d05760ac9386f" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primària Chafarinas</div>`)[0];
+            popup_40c5de65fed14e168b748570f4900655.setContent(html_9d7be8e62bb44aa1b82d05760ac9386f);
+        
+
+        marker_1c8944cd1c7d433ca9088900c7c57c40.bindPopup(popup_40c5de65fed14e168b748570f4900655)
+        ;
+
+        
+    
+    
+            var marker_64ef61f725c542e1bed4675a350a0448 = L.marker(
+                [41.39738463256767, 2.1462760581798173],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_937cce841207431882b3e46062f367ce = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4b51919505e44b549d92d03053576997 = $(`<div id="html_4b51919505e44b549d92d03053576997" style="width: 100.0%; height: 100.0%;">Centre d'Oftalmologia Barraquer</div>`)[0];
+            popup_937cce841207431882b3e46062f367ce.setContent(html_4b51919505e44b549d92d03053576997);
+        
+
+        marker_64ef61f725c542e1bed4675a350a0448.bindPopup(popup_937cce841207431882b3e46062f367ce)
+        ;
+
+        
+    
+    
+            var marker_02086a243d254f1dbd59aa16a1dcc7b3 = L.marker(
+                [41.42572787631716, 2.1423821574736257],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_7d6aa76a9a21422dbdf401d752955ca3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_21b855a1070f4424a4fd14f0bb231455 = $(`<div id="html_21b855a1070f4424a4fd14f0bb231455" style="width: 100.0%; height: 100.0%;">Hospital Sant Rafael</div>`)[0];
+            popup_7d6aa76a9a21422dbdf401d752955ca3.setContent(html_21b855a1070f4424a4fd14f0bb231455);
+        
+
+        marker_02086a243d254f1dbd59aa16a1dcc7b3.bindPopup(popup_7d6aa76a9a21422dbdf401d752955ca3)
+        ;
+
+        
+    
+    
+            var marker_e9e893109eab4d6491a1e171d2416147 = L.marker(
+                [41.43953322554174, 2.166042134148101],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_06ac3bc8611c4eacb4ef5309b60fe4e7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e980982ffbaf4b8cb40eb18b8444a82a = $(`<div id="html_e980982ffbaf4b8cb40eb18b8444a82a" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primària Guineueta</div>`)[0];
+            popup_06ac3bc8611c4eacb4ef5309b60fe4e7.setContent(html_e980982ffbaf4b8cb40eb18b8444a82a);
+        
+
+        marker_e9e893109eab4d6491a1e171d2416147.bindPopup(popup_06ac3bc8611c4eacb4ef5309b60fe4e7)
+        ;
+
+        
+    
+    
+            var marker_c78c7ac5f3a546a3ac78636311acd947 = L.marker(
+                [41.43787657189986, 2.161990838601969],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_c20a794a26494da4b48ab19f4b0f4721 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d2abc1b19db843afb4263a7ba4b1971e = $(`<div id="html_d2abc1b19db843afb4263a7ba4b1971e" style="width: 100.0%; height: 100.0%;">Residència Sociosanitaria Assistida Psicoclínica Mare de Déu de la Mercè</div>`)[0];
+            popup_c20a794a26494da4b48ab19f4b0f4721.setContent(html_d2abc1b19db843afb4263a7ba4b1971e);
+        
+
+        marker_c78c7ac5f3a546a3ac78636311acd947.bindPopup(popup_c20a794a26494da4b48ab19f4b0f4721)
+        ;
+
+        
+    
+    
+            var marker_7a08ddf39a174d279b8f8e652d1210a1 = L.marker(
+                [41.43787657189986, 2.161990838601969],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_01f692bda793410a86ea9c6b3f8de10c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a39745b66f7d44eaaf25089eefea77e6 = $(`<div id="html_a39745b66f7d44eaaf25089eefea77e6" style="width: 100.0%; height: 100.0%;">Residència Sociosanitaria Assistida Psicoclínica Mare de Déu de la Mercè</div>`)[0];
+            popup_01f692bda793410a86ea9c6b3f8de10c.setContent(html_a39745b66f7d44eaaf25089eefea77e6);
+        
+
+        marker_7a08ddf39a174d279b8f8e652d1210a1.bindPopup(popup_01f692bda793410a86ea9c6b3f8de10c)
+        ;
+
+        
+    
+    
+            var marker_a4497289217845f1a31375d90bb62bb9 = L.marker(
+                [41.44617408664395, 2.1739259726963738],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_f6369505f77a4c068ab6e801a3bf6b88 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_056b026f71cb4814a413af98660e8a1c = $(`<div id="html_056b026f71cb4814a413af98660e8a1c" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primària Roquetes</div>`)[0];
+            popup_f6369505f77a4c068ab6e801a3bf6b88.setContent(html_056b026f71cb4814a413af98660e8a1c);
+        
+
+        marker_a4497289217845f1a31375d90bb62bb9.bindPopup(popup_f6369505f77a4c068ab6e801a3bf6b88)
+        ;
+
+        
+    
+    
+            var marker_605ec333cdbf4e6cbe318da3b49fa276 = L.marker(
+                [41.384846652460126, 2.1237432372725378],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_355f04d74fa1451b9353aff0215439a3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ab47a413609142e1b6dc202514ce8172 = $(`<div id="html_ab47a413609142e1b6dc202514ce8172" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primària Les Corts</div>`)[0];
+            popup_355f04d74fa1451b9353aff0215439a3.setContent(html_ab47a413609142e1b6dc202514ce8172);
+        
+
+        marker_605ec333cdbf4e6cbe318da3b49fa276.bindPopup(popup_355f04d74fa1451b9353aff0215439a3)
+        ;
+
+        
+    
+    
+            var marker_c013a8a5657b4769be78954bf502500e = L.marker(
+                [41.439945663466254, 2.181982656352555],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_084d4014eca040739272a7ecaea51ea5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f648acd004024985be955fd03cdd1165 = $(`<div id="html_f648acd004024985be955fd03cdd1165" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primària Rio de Janeiro</div>`)[0];
+            popup_084d4014eca040739272a7ecaea51ea5.setContent(html_f648acd004024985be955fd03cdd1165);
+        
+
+        marker_c013a8a5657b4769be78954bf502500e.bindPopup(popup_084d4014eca040739272a7ecaea51ea5)
+        ;
+
+        
+    
+    
+            var marker_b7da4a5d11594ecd9044caaee25fe894 = L.marker(
+                [41.42632706053321, 2.1761605774773924],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_c79eb59fc55c4c0d84d6d2aa383c4e04 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b6abf7c8c33649858341a9db8442fbd6 = $(`<div id="html_b6abf7c8c33649858341a9db8442fbd6" style="width: 100.0%; height: 100.0%;">Hospital de Dia</div>`)[0];
+            popup_c79eb59fc55c4c0d84d6d2aa383c4e04.setContent(html_b6abf7c8c33649858341a9db8442fbd6);
+        
+
+        marker_b7da4a5d11594ecd9044caaee25fe894.bindPopup(popup_c79eb59fc55c4c0d84d6d2aa383c4e04)
+        ;
+
+        
+    
+    
+            var marker_e415f6973e944b2098519e43938a8e81 = L.marker(
+                [41.38142443243878, 2.141043629243917],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_09d59371b50a4041b2469a002a226663 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1bee55f252ea4dee8b0fe8cfe94922c9 = $(`<div id="html_1bee55f252ea4dee8b0fe8cfe94922c9" style="width: 100.0%; height: 100.0%;">Hospital de dia - Numància</div>`)[0];
+            popup_09d59371b50a4041b2469a002a226663.setContent(html_1bee55f252ea4dee8b0fe8cfe94922c9);
+        
+
+        marker_e415f6973e944b2098519e43938a8e81.bindPopup(popup_09d59371b50a4041b2469a002a226663)
+        ;
+
+        
+    
+    
+            var marker_af12c45d06344cc1a1f92eed1b8f632f = L.marker(
+                [41.40633463591839, 2.211223456711735],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_e4351bed24de45dfb0772bfdddaef5b4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_992972d357fc474a8d86ec2549769a13 = $(`<div id="html_992972d357fc474a8d86ec2549769a13" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primària Ramon Turró</div>`)[0];
+            popup_e4351bed24de45dfb0772bfdddaef5b4.setContent(html_992972d357fc474a8d86ec2549769a13);
+        
+
+        marker_af12c45d06344cc1a1f92eed1b8f632f.bindPopup(popup_e4351bed24de45dfb0772bfdddaef5b4)
+        ;
+
+        
+    
+    
+            var marker_b78d75a7d9ac48bca6928d853ef1f9d6 = L.marker(
+                [41.40576618443375, 2.20237655703193],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_a78b9aadca9d4cf89b8e6a6dd3c40360 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e0d055e400ee449585c462541a3f07d4 = $(`<div id="html_e0d055e400ee449585c462541a3f07d4" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primària Poblenou</div>`)[0];
+            popup_a78b9aadca9d4cf89b8e6a6dd3c40360.setContent(html_e0d055e400ee449585c462541a3f07d4);
+        
+
+        marker_b78d75a7d9ac48bca6928d853ef1f9d6.bindPopup(popup_a78b9aadca9d4cf89b8e6a6dd3c40360)
+        ;
+
+        
+    
+    
+            var marker_2bb9c50b78ed4b8f86327847b8352f0a = L.marker(
+                [41.41283388063477, 2.2185438389937966],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_f05ffdda98f0437bae92cbaf9be42cc4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_822d87fbf5bc4189877705c4b0aa32b9 = $(`<div id="html_822d87fbf5bc4189877705c4b0aa32b9" style="width: 100.0%; height: 100.0%;">Hospital de Dia</div>`)[0];
+            popup_f05ffdda98f0437bae92cbaf9be42cc4.setContent(html_822d87fbf5bc4189877705c4b0aa32b9);
+        
+
+        marker_2bb9c50b78ed4b8f86327847b8352f0a.bindPopup(popup_f05ffdda98f0437bae92cbaf9be42cc4)
+        ;
+
+        
+    
+    
+            var marker_6dd760b5039b4057b66f6b71430ab14d = L.marker(
+                [41.427163828467584, 2.088657146119551],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_e5058a7253d44f9f9c9dd5c185129556 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7e2116d63cf342bc807c0e1eb1128416 = $(`<div id="html_7e2116d63cf342bc807c0e1eb1128416" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primària Les Planes</div>`)[0];
+            popup_e5058a7253d44f9f9c9dd5c185129556.setContent(html_7e2116d63cf342bc807c0e1eb1128416);
+        
+
+        marker_6dd760b5039b4057b66f6b71430ab14d.bindPopup(popup_e5058a7253d44f9f9c9dd5c185129556)
+        ;
+
+        
+    
+    
+            var marker_0de952630a714d279fefcfe8f33312ce = L.marker(
+                [41.39739039003385, 2.173884369793785],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_6ee1609597434fa1bcae51192e464e3e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_55c5a2e2fc254035a41c031f41f02b2f = $(`<div id="html_55c5a2e2fc254035a41c031f41f02b2f" style="width: 100.0%; height: 100.0%;">Hospital de Nens de Barcelona</div>`)[0];
+            popup_6ee1609597434fa1bcae51192e464e3e.setContent(html_55c5a2e2fc254035a41c031f41f02b2f);
+        
+
+        marker_0de952630a714d279fefcfe8f33312ce.bindPopup(popup_6ee1609597434fa1bcae51192e464e3e)
+        ;
+
+        
+    
+    
+            var marker_bcb590e36d5140a497c3dd5166d0cc30 = L.marker(
+                [41.401464872124905, 2.1504653774644478],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_e9c1e1df7aed415fa3675eabc7b64a29 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8643f0c9d6cb4f04b80aeac884692513 = $(`<div id="html_8643f0c9d6cb4f04b80aeac884692513" style="width: 100.0%; height: 100.0%;">Hospital Fremap - Centre de Prevenció i Rehabilitació</div>`)[0];
+            popup_e9c1e1df7aed415fa3675eabc7b64a29.setContent(html_8643f0c9d6cb4f04b80aeac884692513);
+        
+
+        marker_bcb590e36d5140a497c3dd5166d0cc30.bindPopup(popup_e9c1e1df7aed415fa3675eabc7b64a29)
+        ;
+
+        
+    
+    
+            var marker_1528548a67d94740aed5b26283c12965 = L.marker(
+                [41.39933870913293, 2.115644191358369],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_ce44c20bd1814348b8266b01c2222791 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_62f1c0ed839042b2b4d8ffa8f4a2ed43 = $(`<div id="html_62f1c0ed839042b2b4d8ffa8f4a2ed43" style="width: 100.0%; height: 100.0%;">Clínica Planas</div>`)[0];
+            popup_ce44c20bd1814348b8266b01c2222791.setContent(html_62f1c0ed839042b2b4d8ffa8f4a2ed43);
+        
+
+        marker_1528548a67d94740aed5b26283c12965.bindPopup(popup_ce44c20bd1814348b8266b01c2222791)
+        ;
+
+        
+    
+    
+            var marker_efc452334bc5422a960ca9c374d5402a = L.marker(
+                [41.39352284333145, 2.130747645161546],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_e6fa2cc3146147119e0652e27bcbb31b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bccc939ea3bf4d3691f2c262d6bcc298 = $(`<div id="html_bccc939ea3bf4d3691f2c262d6bcc298" style="width: 100.0%; height: 100.0%;">Clínica Corachan</div>`)[0];
+            popup_e6fa2cc3146147119e0652e27bcbb31b.setContent(html_bccc939ea3bf4d3691f2c262d6bcc298);
+        
+
+        marker_efc452334bc5422a960ca9c374d5402a.bindPopup(popup_e6fa2cc3146147119e0652e27bcbb31b)
+        ;
+
+        
+    
+    
+            var marker_2c2e6310f9c7408ca2fb00027fd0532b = L.marker(
+                [41.38932093617983, 2.1288340319480503],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_c60fc1c9592f4f6ab6fcd0bec641bdaa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_341d5fdb705f4662aacc15e8cb56e2af = $(`<div id="html_341d5fdb705f4662aacc15e8cb56e2af" style="width: 100.0%; height: 100.0%;">Clínica Institut Marquès</div>`)[0];
+            popup_c60fc1c9592f4f6ab6fcd0bec641bdaa.setContent(html_341d5fdb705f4662aacc15e8cb56e2af);
+        
+
+        marker_2c2e6310f9c7408ca2fb00027fd0532b.bindPopup(popup_c60fc1c9592f4f6ab6fcd0bec641bdaa)
+        ;
+
+        
+    
+    
+            var marker_1ad63a649eaf49528024e567c36ffe6b = L.marker(
+                [41.43321350019728, 2.183633941889013],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_f64dc96277ad41a8bb43eff3096d53d9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_751e3f30034e40fbadedef40a30e76cc = $(`<div id="html_751e3f30034e40fbadedef40a30e76cc" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primària Sant Andreu</div>`)[0];
+            popup_f64dc96277ad41a8bb43eff3096d53d9.setContent(html_751e3f30034e40fbadedef40a30e76cc);
+        
+
+        marker_1ad63a649eaf49528024e567c36ffe6b.bindPopup(popup_f64dc96277ad41a8bb43eff3096d53d9)
+        ;
+
+        
+    
+    
+            var marker_a7b6485693ec4218af7e39c6ffab0702 = L.marker(
+                [41.35829397580574, 2.1443205163413563],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_6d1d0e59bab8447d9a65f049a8a948fd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ad5670297e9240329aa006e59581974a = $(`<div id="html_ad5670297e9240329aa006e59581974a" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primària Doctor Carles Ribas</div>`)[0];
+            popup_6d1d0e59bab8447d9a65f049a8a948fd.setContent(html_ad5670297e9240329aa006e59581974a);
+        
+
+        marker_a7b6485693ec4218af7e39c6ffab0702.bindPopup(popup_6d1d0e59bab8447d9a65f049a8a948fd)
+        ;
+
+        
+    
+    
+            var marker_f03b88fab3db4f7aa2064c4c92b5ab93 = L.marker(
+                [41.43896601648905, 2.206215066880394],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_afd43b03aec14462a2d2a7676b814a59 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_98681afa87a2456daaf5d2e94358121b = $(`<div id="html_98681afa87a2456daaf5d2e94358121b" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primària Bon Pastor</div>`)[0];
+            popup_afd43b03aec14462a2d2a7676b814a59.setContent(html_98681afa87a2456daaf5d2e94358121b);
+        
+
+        marker_f03b88fab3db4f7aa2064c4c92b5ab93.bindPopup(popup_afd43b03aec14462a2d2a7676b814a59)
+        ;
+
+        
+    
+    
+            var marker_a58a0d635cbb43debda8b2720594c496 = L.marker(
+                [41.40883994540256, 2.1498524077600574],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_3604c9da2a0b4b4b82e35639bdea5e72 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7f3077c8d73a40d59d547b1b45224961 = $(`<div id="html_7f3077c8d73a40d59d547b1b45224961" style="width: 100.0%; height: 100.0%;">Hospital de Dia</div>`)[0];
+            popup_3604c9da2a0b4b4b82e35639bdea5e72.setContent(html_7f3077c8d73a40d59d547b1b45224961);
+        
+
+        marker_a58a0d635cbb43debda8b2720594c496.bindPopup(popup_3604c9da2a0b4b4b82e35639bdea5e72)
+        ;
+
+        
+    
+    
+            var marker_7302f5c9af3e4774bf4ab3dc68ca3bea = L.marker(
+                [41.43675865439791, 2.193077895717268],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_724eb36257f848339195868b0535c597 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_13f322faa9d04d9f9f9df268a3e39528 = $(`<div id="html_13f322faa9d04d9f9f9df268a3e39528" style="width: 100.0%; height: 100.0%;">Clínica Sant Jordi</div>`)[0];
+            popup_724eb36257f848339195868b0535c597.setContent(html_13f322faa9d04d9f9f9df268a3e39528);
+        
+
+        marker_7302f5c9af3e4774bf4ab3dc68ca3bea.bindPopup(popup_724eb36257f848339195868b0535c597)
+        ;
+
+        
+    
+    
+            var marker_66a573179510449480d9ef9fa28d1733 = L.marker(
+                [41.40070166539195, 2.134797456051401],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_ef8a1b2dfc744dc5a8636374d1d0315c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d5f9703955e6429ca5c9406a96e70ee7 = $(`<div id="html_d5f9703955e6429ca5c9406a96e70ee7" style="width: 100.0%; height: 100.0%;">Clínica Sagrada Família</div>`)[0];
+            popup_ef8a1b2dfc744dc5a8636374d1d0315c.setContent(html_d5f9703955e6429ca5c9406a96e70ee7);
+        
+
+        marker_66a573179510449480d9ef9fa28d1733.bindPopup(popup_ef8a1b2dfc744dc5a8636374d1d0315c)
+        ;
+
+        
+    
+    
+            var marker_608757ecb2314873a758457584c24684 = L.marker(
+                [41.414037620960016, 2.1426344260542525],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_2bc248cf86e4456ba9d0d49877501ffc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_45efac13f64c4215a917bd78cc5e7e0d = $(`<div id="html_45efac13f64c4215a917bd78cc5e7e0d" style="width: 100.0%; height: 100.0%;">Hospital Delfos</div>`)[0];
+            popup_2bc248cf86e4456ba9d0d49877501ffc.setContent(html_45efac13f64c4215a917bd78cc5e7e0d);
+        
+
+        marker_608757ecb2314873a758457584c24684.bindPopup(popup_2bc248cf86e4456ba9d0d49877501ffc)
+        ;
+
+        
+    
+    
+            var marker_3a17abca580f4e65bf38b12c2b47b41a = L.marker(
+                [41.37655006963406, 2.1734032878024605],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_5e8d5cbaf3684f999a119b1940359314 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e2a86e4daf4048659548fa1e0e2b009a = $(`<div id="html_e2a86e4daf4048659548fa1e0e2b009a" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primària Drassanes</div>`)[0];
+            popup_5e8d5cbaf3684f999a119b1940359314.setContent(html_e2a86e4daf4048659548fa1e0e2b009a);
+        
+
+        marker_3a17abca580f4e65bf38b12c2b47b41a.bindPopup(popup_5e8d5cbaf3684f999a119b1940359314)
+        ;
+
+        
+    
+    
+            var marker_3f7bc2b798554164a5cfa4aaa382e6a1 = L.marker(
+                [41.41216807741864, 2.135828746667937],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_94f3249350bb483eac44555a9bed15c7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6afe3e12495047fe9ce80b4947c0adbd = $(`<div id="html_6afe3e12495047fe9ce80b4947c0adbd" style="width: 100.0%; height: 100.0%;">Clínica Sant Honorat</div>`)[0];
+            popup_94f3249350bb483eac44555a9bed15c7.setContent(html_6afe3e12495047fe9ce80b4947c0adbd);
+        
+
+        marker_3f7bc2b798554164a5cfa4aaa382e6a1.bindPopup(popup_94f3249350bb483eac44555a9bed15c7)
+        ;
+
+        
+    
+    
+            var marker_00c15d4f3ea44d2b960f9ca7bd0730c1 = L.marker(
+                [41.443165080225725, 2.192838290511633],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_fc08ddd1d12e44309053fc8de5bf9d7e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ce618d68ddd845f7a0fb92e2b5702c64 = $(`<div id="html_ce618d68ddd845f7a0fb92e2b5702c64" style="width: 100.0%; height: 100.0%;">Centre d'Urgències d'Atenció Primària Casernes de Sant Andreu</div>`)[0];
+            popup_fc08ddd1d12e44309053fc8de5bf9d7e.setContent(html_ce618d68ddd845f7a0fb92e2b5702c64);
+        
+
+        marker_00c15d4f3ea44d2b960f9ca7bd0730c1.bindPopup(popup_fc08ddd1d12e44309053fc8de5bf9d7e)
+        ;
+
+        
+    
+    
+            var marker_21fa65d086334cfabc1b984182fd82d8 = L.marker(
+                [41.38433595216771, 2.165173981341848],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_193c14b7f12d49fe8cf27d34b43b87c6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_78c65f83dca54d2a9a2716618d8fd16b = $(`<div id="html_78c65f83dca54d2a9a2716618d8fd16b" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primària Doctor Lluís Sayé</div>`)[0];
+            popup_193c14b7f12d49fe8cf27d34b43b87c6.setContent(html_78c65f83dca54d2a9a2716618d8fd16b);
+        
+
+        marker_21fa65d086334cfabc1b984182fd82d8.bindPopup(popup_193c14b7f12d49fe8cf27d34b43b87c6)
+        ;
+
+        
+    
+    
+            var marker_a3293d27900f4ddf8e523f1366859275 = L.marker(
+                [41.375937136268696, 2.189988859177943],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_00dc27b4fe7c4cfe900ac5788f17d9a7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1c29c9076e4b46e9b548b045d38c93e5 = $(`<div id="html_1c29c9076e4b46e9b548b045d38c93e5" style="width: 100.0%; height: 100.0%;">CBC Clínica Barceloneta</div>`)[0];
+            popup_00dc27b4fe7c4cfe900ac5788f17d9a7.setContent(html_1c29c9076e4b46e9b548b045d38c93e5);
+        
+
+        marker_a3293d27900f4ddf8e523f1366859275.bindPopup(popup_00dc27b4fe7c4cfe900ac5788f17d9a7)
+        ;
+
+        
+    
+    
+            var marker_40f6c09c98ab4377b93b4cf88e74b826 = L.marker(
+                [41.41336311768161, 2.161046463543104],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_ea7e22e5a91540a281bb63b0675ffd82 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_724810c0fd0b484ca1e13857e4a1577f = $(`<div id="html_724810c0fd0b484ca1e13857e4a1577f" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primària Sanllehy</div>`)[0];
+            popup_ea7e22e5a91540a281bb63b0675ffd82.setContent(html_724810c0fd0b484ca1e13857e4a1577f);
+        
+
+        marker_40f6c09c98ab4377b93b4cf88e74b826.bindPopup(popup_ea7e22e5a91540a281bb63b0675ffd82)
+        ;
+
+        
+    
+    
+            var marker_9547b4a005ec40f98749df9958508249 = L.marker(
+                [41.40130002082709, 2.1424279977430216],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_357a859ebc7641758812ce32c801c942 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2377cf2611d247ef96ac80c77820be0d = $(`<div id="html_2377cf2611d247ef96ac80c77820be0d" style="width: 100.0%; height: 100.0%;">Hospital Plató</div>`)[0];
+            popup_357a859ebc7641758812ce32c801c942.setContent(html_2377cf2611d247ef96ac80c77820be0d);
+        
+
+        marker_9547b4a005ec40f98749df9958508249.bindPopup(popup_357a859ebc7641758812ce32c801c942)
+        ;
+
+        
+    
+    
+            var marker_ea11baca3d284abfaf035814614eb8db = L.marker(
+                [41.40950588098142, 2.159728804474834],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_a96cca7d403349ac86734ca1631fe7b0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d82f588dc9d14ecdaaa2018bbde7e98b = $(`<div id="html_d82f588dc9d14ecdaaa2018bbde7e98b" style="width: 100.0%; height: 100.0%;">Clínica Nostra Senyora del Remei</div>`)[0];
+            popup_a96cca7d403349ac86734ca1631fe7b0.setContent(html_d82f588dc9d14ecdaaa2018bbde7e98b);
+        
+
+        marker_ea11baca3d284abfaf035814614eb8db.bindPopup(popup_a96cca7d403349ac86734ca1631fe7b0)
+        ;
+
+        
+    
+    
+            var marker_9f6fd8edd3eb4dfda34b8975ecf24ab7 = L.marker(
+                [41.41110327599354, 2.1589187127071603],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_582df60ca7ab4096ad9f8bcf799f6b12 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_003f5398a20d4b55b4fed3e6d4dcf9b8 = $(`<div id="html_003f5398a20d4b55b4fed3e6d4dcf9b8" style="width: 100.0%; height: 100.0%;">Nou Hospital Evangèlic</div>`)[0];
+            popup_582df60ca7ab4096ad9f8bcf799f6b12.setContent(html_003f5398a20d4b55b4fed3e6d4dcf9b8);
+        
+
+        marker_9f6fd8edd3eb4dfda34b8975ecf24ab7.bindPopup(popup_582df60ca7ab4096ad9f8bcf799f6b12)
+        ;
+
+        
+    
+    
+            var marker_68c2731f48ea4c0b89880c685d7288a8 = L.marker(
+                [41.42632706053321, 2.1761605774773924],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_72bf4ced60fb463982234d565c553f96 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_184d9b1f4c324a6b95acddec1a5f3122 = $(`<div id="html_184d9b1f4c324a6b95acddec1a5f3122" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primaria</div>`)[0];
+            popup_72bf4ced60fb463982234d565c553f96.setContent(html_184d9b1f4c324a6b95acddec1a5f3122);
+        
+
+        marker_68c2731f48ea4c0b89880c685d7288a8.bindPopup(popup_72bf4ced60fb463982234d565c553f96)
+        ;
+
+        
+    
+    
+            var marker_f943ad4cef864069a1ca845c386a6481 = L.marker(
+                [41.42632706053321, 2.1761605774773924],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_5b92878f1d9349a28ffdfab4b33e0fe9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9e79f2df24544bd5a3865dd999816b53 = $(`<div id="html_9e79f2df24544bd5a3865dd999816b53" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primaria</div>`)[0];
+            popup_5b92878f1d9349a28ffdfab4b33e0fe9.setContent(html_9e79f2df24544bd5a3865dd999816b53);
+        
+
+        marker_f943ad4cef864069a1ca845c386a6481.bindPopup(popup_5b92878f1d9349a28ffdfab4b33e0fe9)
+        ;
+
+        
+    
+    
+            var marker_15371a50ec0048db96d0247fc129799a = L.marker(
+                [41.41544108395991, 2.1739598683555683],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_105fa112ceb64552a47bc2b9e54dd549 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5263fe02850344d9a54a9b006ccb605a = $(`<div id="html_5263fe02850344d9a54a9b006ccb605a" style="width: 100.0%; height: 100.0%;">Hospital de la Santa Creu i Sant Pau</div>`)[0];
+            popup_105fa112ceb64552a47bc2b9e54dd549.setContent(html_5263fe02850344d9a54a9b006ccb605a);
+        
+
+        marker_15371a50ec0048db96d0247fc129799a.bindPopup(popup_105fa112ceb64552a47bc2b9e54dd549)
+        ;
+
+        
+    
+    
+            var marker_0764f47be9984bd9a2f31158d54ef2f1 = L.marker(
+                [41.40196697142779, 2.121523780191905],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_5ef4b0088ea04adab5cf05effe5564de = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1ae775a9b9984035972c0c9c832d0173 = $(`<div id="html_1ae775a9b9984035972c0c9c832d0173" style="width: 100.0%; height: 100.0%;">Hospital de Dia d'Adolescents Les Corts - Sarrià - Sant Gervasi</div>`)[0];
+            popup_5ef4b0088ea04adab5cf05effe5564de.setContent(html_1ae775a9b9984035972c0c9c832d0173);
+        
+
+        marker_0764f47be9984bd9a2f31158d54ef2f1.bindPopup(popup_5ef4b0088ea04adab5cf05effe5564de)
+        ;
+
+        
+    
+    
+            var marker_8df5a2ed660f4b7cbc7f9d0872fcedbf = L.marker(
+                [41.39869811526309, 2.1619949302029338],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_20cf2f4d4df344f8b7a026a8daad9196 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cddc7a0f8aa44b63b56d0e3e514e912c = $(`<div id="html_cddc7a0f8aa44b63b56d0e3e514e912c" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primària  Vila de Gràcia-Cibeles</div>`)[0];
+            popup_20cf2f4d4df344f8b7a026a8daad9196.setContent(html_cddc7a0f8aa44b63b56d0e3e514e912c);
+        
+
+        marker_8df5a2ed660f4b7cbc7f9d0872fcedbf.bindPopup(popup_20cf2f4d4df344f8b7a026a8daad9196)
+        ;
+
+        
+    
+    
+            var marker_10ac18da75ba43a98cba58263ec4e04e = L.marker(
+                [41.36337289533501, 2.1370125986858204],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_4b01060d44154a58a8b89808a86241b3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c56847371ece47e1b6909eddcc6d4648 = $(`<div id="html_c56847371ece47e1b6909eddcc6d4648" style="width: 100.0%; height: 100.0%;">Clínica Podològica Integral</div>`)[0];
+            popup_4b01060d44154a58a8b89808a86241b3.setContent(html_c56847371ece47e1b6909eddcc6d4648);
+        
+
+        marker_10ac18da75ba43a98cba58263ec4e04e.bindPopup(popup_4b01060d44154a58a8b89808a86241b3)
+        ;
+
+        
+    
+    
+            var marker_07f0af9732004a69b2e76e70220216bd = L.marker(
+                [41.38527279999507, 2.12605640432412],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_53d60a3bd2d44967a2c779c94600bb1c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e834b5b98629437cac3f0baff19a23e7 = $(`<div id="html_e834b5b98629437cac3f0baff19a23e7" style="width: 100.0%; height: 100.0%;">Unitat Cirurgia Barcelona</div>`)[0];
+            popup_53d60a3bd2d44967a2c779c94600bb1c.setContent(html_e834b5b98629437cac3f0baff19a23e7);
+        
+
+        marker_07f0af9732004a69b2e76e70220216bd.bindPopup(popup_53d60a3bd2d44967a2c779c94600bb1c)
+        ;
+
+        
+    
+    
+            var marker_8669f5249ad746ea8120860c2d9eee42 = L.marker(
+                [41.38142443243878, 2.141043629243917],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_e350c2b803204bff867e035ae0df031c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d58e2644fa3541d89272d9510a8a9629 = $(`<div id="html_d58e2644fa3541d89272d9510a8a9629" style="width: 100.0%; height: 100.0%;">Servei d'Urgències Pediàtriques</div>`)[0];
+            popup_e350c2b803204bff867e035ae0df031c.setContent(html_d58e2644fa3541d89272d9510a8a9629);
+        
+
+        marker_8669f5249ad746ea8120860c2d9eee42.bindPopup(popup_e350c2b803204bff867e035ae0df031c)
+        ;
+
+        
+    
+    
+            var marker_7e0d52a85f1f48899d03eb836c282cce = L.marker(
+                [41.36986934117719, 2.14126001076402],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_2bdd2b15cd9540398981ae42018445c0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_25a95df1e9664887ad7d90ab2deb74b2 = $(`<div id="html_25a95df1e9664887ad7d90ab2deb74b2" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primària Bordeta - Magòria</div>`)[0];
+            popup_2bdd2b15cd9540398981ae42018445c0.setContent(html_25a95df1e9664887ad7d90ab2deb74b2);
+        
+
+        marker_7e0d52a85f1f48899d03eb836c282cce.bindPopup(popup_2bdd2b15cd9540398981ae42018445c0)
+        ;
+
+        
+    
+    
+            var marker_1dcca686b8734c78a038244313fda57a = L.marker(
+                [41.41046666778343, 2.176649237190462],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_3952ba248019446fada73f9e7386738d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cf9f35c5261b4966865bdb0e73bf0adf = $(`<div id="html_cf9f35c5261b4966865bdb0e73bf0adf" style="width: 100.0%; height: 100.0%;">Centre d'Urgències d'Atenció Primària Hospital Dos de Maig</div>`)[0];
+            popup_3952ba248019446fada73f9e7386738d.setContent(html_cf9f35c5261b4966865bdb0e73bf0adf);
+        
+
+        marker_1dcca686b8734c78a038244313fda57a.bindPopup(popup_3952ba248019446fada73f9e7386738d)
+        ;
+
+        
+    
+    
+            var marker_07d9e7fb700c45d3ac4308d71e16dbfd = L.marker(
+                [41.39110575704744, 2.123644032557961],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_deaa549d17c144eca6d679ec7e720935 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e0f3ded440534521879089cbc2300bd5 = $(`<div id="html_e0f3ded440534521879089cbc2300bd5" style="width: 100.0%; height: 100.0%;">Hospital CIMA. Centro Internacional de Medicina Avanzada</div>`)[0];
+            popup_deaa549d17c144eca6d679ec7e720935.setContent(html_e0f3ded440534521879089cbc2300bd5);
+        
+
+        marker_07d9e7fb700c45d3ac4308d71e16dbfd.bindPopup(popup_deaa549d17c144eca6d679ec7e720935)
+        ;
+
+        
+    
+    
+            var marker_90110ccf1f9c430ba5752510f08fc81d = L.marker(
+                [41.377582074541536, 2.1720333118356927],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_79e96018961a458a936c09569f6f81c7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1bd4f6d869774c83922bd4b115b436f6 = $(`<div id="html_1bd4f6d869774c83922bd4b115b436f6" style="width: 100.0%; height: 100.0%;">Centre d'Urgències d'Atenció Primària  Ciutat Vella - Peracamps</div>`)[0];
+            popup_79e96018961a458a936c09569f6f81c7.setContent(html_1bd4f6d869774c83922bd4b115b436f6);
+        
+
+        marker_90110ccf1f9c430ba5752510f08fc81d.bindPopup(popup_79e96018961a458a936c09569f6f81c7)
+        ;
+
+        
+    
+    
+            var marker_137c96635e4e4c2eacec09c9aa75bc70 = L.marker(
+                [41.39267932164973, 2.178962864832544],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_f1e0c7a7dedb455cb98a92ed4b708cb4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_23d897d5b0b04b0899744898e17ab0fb = $(`<div id="html_23d897d5b0b04b0899744898e17ab0fb" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primària Passeig Sant Joan</div>`)[0];
+            popup_f1e0c7a7dedb455cb98a92ed4b708cb4.setContent(html_23d897d5b0b04b0899744898e17ab0fb);
+        
+
+        marker_137c96635e4e4c2eacec09c9aa75bc70.bindPopup(popup_f1e0c7a7dedb455cb98a92ed4b708cb4)
+        ;
+
+        
+    
+    
+            var marker_2edc3b5aa1204ab698cb1a52c62d63f1 = L.marker(
+                [41.41420672357582, 2.174376777322996],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_87b94a81840249948788cc2d417b58fd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cbeb2ac3d1814b01b7d3929d0ca0add1 = $(`<div id="html_cbeb2ac3d1814b01b7d3929d0ca0add1" style="width: 100.0%; height: 100.0%;">nan</div>`)[0];
+            popup_87b94a81840249948788cc2d417b58fd.setContent(html_cbeb2ac3d1814b01b7d3929d0ca0add1);
+        
+
+        marker_2edc3b5aa1204ab698cb1a52c62d63f1.bindPopup(popup_87b94a81840249948788cc2d417b58fd)
+        ;
+
+        
+    
+    
+            var marker_670e29c011a443a5b3dac9be12d9e940 = L.marker(
+                [41.37676616209959, 2.1350723954187125],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_1a87207b9c6347a99cebd853cc550cce = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b61005e90a2a411085927efe3870cd11 = $(`<div id="html_b61005e90a2a411085927efe3870cd11" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primària Sants</div>`)[0];
+            popup_1a87207b9c6347a99cebd853cc550cce.setContent(html_b61005e90a2a411085927efe3870cd11);
+        
+
+        marker_670e29c011a443a5b3dac9be12d9e940.bindPopup(popup_1a87207b9c6347a99cebd853cc550cce)
+        ;
+
+        
+    
+    
+            var marker_30ba3bd61dc54729b498e6e4786b1956 = L.marker(
+                [41.38950562237319, 2.146397759629386],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_9286816be41a443e94d6897c4509630e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ecd26fd8bcdc4a9f85ec06ec25a83064 = $(`<div id="html_ecd26fd8bcdc4a9f85ec06ec25a83064" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primària Comte Borrell</div>`)[0];
+            popup_9286816be41a443e94d6897c4509630e.setContent(html_ecd26fd8bcdc4a9f85ec06ec25a83064);
+        
+
+        marker_30ba3bd61dc54729b498e6e4786b1956.bindPopup(popup_9286816be41a443e94d6897c4509630e)
+        ;
+
+        
+    
+    
+            var marker_3f7426d85cf746c29f7affc2ec954876 = L.marker(
+                [41.37881463871673, 2.1770261515014084],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_42984b20a1394da9955af37b165b31b3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a397469ff4384a1da646a72cd179207b = $(`<div id="html_a397469ff4384a1da646a72cd179207b" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primària Gòtic</div>`)[0];
+            popup_42984b20a1394da9955af37b165b31b3.setContent(html_a397469ff4384a1da646a72cd179207b);
+        
+
+        marker_3f7426d85cf746c29f7affc2ec954876.bindPopup(popup_42984b20a1394da9955af37b165b31b3)
+        ;
+
+        
+    
+    
+            var marker_06b4f331a6bf4f3889d047b5d60fc5da = L.marker(
+                [41.40946879799104, 2.165559158653853],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_0ea2fbbb3b8a4994b793813aca251f13 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_759eec26f9d94c71abee7c4a8008afa4 = $(`<div id="html_759eec26f9d94c71abee7c4a8008afa4" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primària Sardenya</div>`)[0];
+            popup_0ea2fbbb3b8a4994b793813aca251f13.setContent(html_759eec26f9d94c71abee7c4a8008afa4);
+        
+
+        marker_06b4f331a6bf4f3889d047b5d60fc5da.bindPopup(popup_0ea2fbbb3b8a4994b793813aca251f13)
+        ;
+
+        
+    
+    
+            var marker_c3c5e8aaa0ad4d3985835f41c46dfb81 = L.marker(
+                [41.403301493154544, 2.149619802114201],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_63dc974b3b234e2c99ac06b0973d60df = L.popup({"maxWidth": "100%"});
+
+        
+            var html_73e8f19657ce4b1ab9411b298436720b = $(`<div id="html_73e8f19657ce4b1ab9411b298436720b" style="width: 100.0%; height: 100.0%;">Policlínica Barcelona</div>`)[0];
+            popup_63dc974b3b234e2c99ac06b0973d60df.setContent(html_73e8f19657ce4b1ab9411b298436720b);
+        
+
+        marker_c3c5e8aaa0ad4d3985835f41c46dfb81.bindPopup(popup_63dc974b3b234e2c99ac06b0973d60df)
+        ;
+
+        
+    
+    
+            var marker_ca9ec96bec884e288a758e11aab2b238 = L.marker(
+                [41.371650458215214, 2.1668146806019246],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_44dc10bf1aa640009d3479e1a7f7f39a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c80b76921db84900b978ff6fdcbf2cb0 = $(`<div id="html_c80b76921db84900b978ff6fdcbf2cb0" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primària Les Hortes</div>`)[0];
+            popup_44dc10bf1aa640009d3479e1a7f7f39a.setContent(html_c80b76921db84900b978ff6fdcbf2cb0);
+        
+
+        marker_ca9ec96bec884e288a758e11aab2b238.bindPopup(popup_44dc10bf1aa640009d3479e1a7f7f39a)
+        ;
+
+        
+    
+    
+            var marker_7758ed15997d43e48c860408a21df783 = L.marker(
+                [41.422424588149966, 2.1903562660708573],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_31d3f20a1669408f8cdb7805ac23bde0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c9c20cdb875e49489e306deab4a8e8ff = $(`<div id="html_c9c20cdb875e49489e306deab4a8e8ff" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primària La Sagrera</div>`)[0];
+            popup_31d3f20a1669408f8cdb7805ac23bde0.setContent(html_c9c20cdb875e49489e306deab4a8e8ff);
+        
+
+        marker_7758ed15997d43e48c860408a21df783.bindPopup(popup_31d3f20a1669408f8cdb7805ac23bde0)
+        ;
+
+        
+    
+    
+            var marker_6c2ddf0c4dd041a5a6495d4504ebdd70 = L.marker(
+                [41.38547613349496, 2.1266906636468885],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_178b37b2cc0b4ec39b36d1921fcc47f7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bcdd4023206a43119b1ab13e6ed04352 = $(`<div id="html_bcdd4023206a43119b1ab13e6ed04352" style="width: 100.0%; height: 100.0%;">Hospital Casa de la Maternitat</div>`)[0];
+            popup_178b37b2cc0b4ec39b36d1921fcc47f7.setContent(html_bcdd4023206a43119b1ab13e6ed04352);
+        
+
+        marker_6c2ddf0c4dd041a5a6495d4504ebdd70.bindPopup(popup_178b37b2cc0b4ec39b36d1921fcc47f7)
+        ;
+
+        
+    
+    
+            var marker_2fb3fdaf0040453d9ddbb18dca3d4c20 = L.marker(
+                [41.38343360981441, 2.1946836219941206],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_d99ed52e3a224040a1735c491ebd212d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8fa9ed9d9c1f48bd989061b3996c03bb = $(`<div id="html_8fa9ed9d9c1f48bd989061b3996c03bb" style="width: 100.0%; height: 100.0%;">Hospital del Mar</div>`)[0];
+            popup_d99ed52e3a224040a1735c491ebd212d.setContent(html_8fa9ed9d9c1f48bd989061b3996c03bb);
+        
+
+        marker_2fb3fdaf0040453d9ddbb18dca3d4c20.bindPopup(popup_d99ed52e3a224040a1735c491ebd212d)
+        ;
+
+        
+    
+    
+            var marker_3e00232168bb42c3b36538d0cc49b4bf = L.marker(
+                [41.41381756046356, 2.1041639799133054],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_f9e68e4b14fc4ce0ae9f6c9bf24e0b64 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b2ecf3f8a2fd4a758184779990e1edda = $(`<div id="html_b2ecf3f8a2fd4a758184779990e1edda" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primària Vallvidrera</div>`)[0];
+            popup_f9e68e4b14fc4ce0ae9f6c9bf24e0b64.setContent(html_b2ecf3f8a2fd4a758184779990e1edda);
+        
+
+        marker_3e00232168bb42c3b36538d0cc49b4bf.bindPopup(popup_f9e68e4b14fc4ce0ae9f6c9bf24e0b64)
+        ;
+
+        
+    
+    
+            var marker_cb0c8f67fb154e31bd46ed65708b89fa = L.marker(
+                [41.3988953601588, 2.172747819327548],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_244fc4c0f37b47959567b7d2219bd2cc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9673d8faaba24733b2050dcbb413277c = $(`<div id="html_9673d8faaba24733b2050dcbb413277c" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primària Roger de Flor</div>`)[0];
+            popup_244fc4c0f37b47959567b7d2219bd2cc.setContent(html_9673d8faaba24733b2050dcbb413277c);
+        
+
+        marker_cb0c8f67fb154e31bd46ed65708b89fa.bindPopup(popup_244fc4c0f37b47959567b7d2219bd2cc)
+        ;
+
+        
+    
+    
+            var marker_1d2cebc1a5c04be9aa09ada184d9d58e = L.marker(
+                [41.41539857878109, 2.2154475663274287],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_c2502fad657f421e839f4bfe10c415ca = L.popup({"maxWidth": "100%"});
+
+        
+            var html_098e98f87254430ab7a9c349d7334368 = $(`<div id="html_098e98f87254430ab7a9c349d7334368" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primària Besòs</div>`)[0];
+            popup_c2502fad657f421e839f4bfe10c415ca.setContent(html_098e98f87254430ab7a9c349d7334368);
+        
+
+        marker_1d2cebc1a5c04be9aa09ada184d9d58e.bindPopup(popup_c2502fad657f421e839f4bfe10c415ca)
+        ;
+
+        
+    
+    
+            var marker_12285d7338d144cb929bbbf307929e18 = L.marker(
+                [41.46041438468622, 2.1814277070234023],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_38e81bde8d8641d1b610c7c90b70c88c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a12c2acaa9b5439a93126cfefb6d1e0e = $(`<div id="html_a12c2acaa9b5439a93126cfefb6d1e0e" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primària Ciutat Meridiana</div>`)[0];
+            popup_38e81bde8d8641d1b610c7c90b70c88c.setContent(html_a12c2acaa9b5439a93126cfefb6d1e0e);
+        
+
+        marker_12285d7338d144cb929bbbf307929e18.bindPopup(popup_38e81bde8d8641d1b610c7c90b70c88c)
+        ;
+
+        
+    
+    
+            var marker_e7fe8da538c349a4bc79ec07344e20ec = L.marker(
+                [41.46041438468622, 2.1814277070234023],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_b06d183700ea451b9957a7bc03711f03 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_65fd17765e6f493884329905d8a24d59 = $(`<div id="html_65fd17765e6f493884329905d8a24d59" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primària Ciutat Meridiana</div>`)[0];
+            popup_b06d183700ea451b9957a7bc03711f03.setContent(html_65fd17765e6f493884329905d8a24d59);
+        
+
+        marker_e7fe8da538c349a4bc79ec07344e20ec.bindPopup(popup_b06d183700ea451b9957a7bc03711f03)
+        ;
+
+        
+    
+    
+            var marker_4b1151458d444addbaafb20966187aa4 = L.marker(
+                [41.41730024131077, 2.138063025938122],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_20942ceb039a436a9d72d227ddfd94ef = L.popup({"maxWidth": "100%"});
+
+        
+            var html_79fa6e5f09964236ac606aa370854919 = $(`<div id="html_79fa6e5f09964236ac606aa370854919" style="width: 100.0%; height: 100.0%;">Clínica Geriàtrica Solàrium</div>`)[0];
+            popup_20942ceb039a436a9d72d227ddfd94ef.setContent(html_79fa6e5f09964236ac606aa370854919);
+        
+
+        marker_4b1151458d444addbaafb20966187aa4.bindPopup(popup_20942ceb039a436a9d72d227ddfd94ef)
+        ;
+
+        
+    
+    
+            var marker_7333ece1b24647e984b7435ab1d94a0d = L.marker(
+                [41.39707344769596, 2.148819761970303],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_b15fca32b65e4da89c7b2aeb40863e2c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_83dd1bb2de92458f8d89ff3d2722e817 = $(`<div id="html_83dd1bb2de92458f8d89ff3d2722e817" style="width: 100.0%; height: 100.0%;">Instituto de Trastornos Alimentarios</div>`)[0];
+            popup_b15fca32b65e4da89c7b2aeb40863e2c.setContent(html_83dd1bb2de92458f8d89ff3d2722e817);
+        
+
+        marker_7333ece1b24647e984b7435ab1d94a0d.bindPopup(popup_b15fca32b65e4da89c7b2aeb40863e2c)
+        ;
+
+        
+    
+    
+            var marker_386c54261661422d8bc5174ce38b8639 = L.marker(
+                [41.38343360981441, 2.1946836219941206],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_f7905d2044be4d0d91fb854063ca5b7e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b83032eca877496bb30845deaa75734f = $(`<div id="html_b83032eca877496bb30845deaa75734f" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primària Barceloneta</div>`)[0];
+            popup_f7905d2044be4d0d91fb854063ca5b7e.setContent(html_b83032eca877496bb30845deaa75734f);
+        
+
+        marker_386c54261661422d8bc5174ce38b8639.bindPopup(popup_f7905d2044be4d0d91fb854063ca5b7e)
+        ;
+
+        
+    
+    
+            var marker_e804e3e3ecc1478b8adb7a3c14b4609e = L.marker(
+                [41.3997262174321, 2.147936359853517],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_0ba2305df6444b8f9c3e5c45bf3f6f61 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f20bab9d49be47f3806153aeadff8637 = $(`<div id="html_f20bab9d49be47f3806153aeadff8637" style="width: 100.0%; height: 100.0%;">Clínica Oftalmològica Visioncore</div>`)[0];
+            popup_0ba2305df6444b8f9c3e5c45bf3f6f61.setContent(html_f20bab9d49be47f3806153aeadff8637);
+        
+
+        marker_e804e3e3ecc1478b8adb7a3c14b4609e.bindPopup(popup_0ba2305df6444b8f9c3e5c45bf3f6f61)
+        ;
+
+        
+    
+    
+            var marker_1298bfb7f05a4fd2a0511e99d40f3379 = L.marker(
+                [41.39045563415485, 2.1947329373295883],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_c79e6dab32884f96a0d8ffa509e98f49 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fb113f0e375148a6a33874e1c6e107fd = $(`<div id="html_fb113f0e375148a6a33874e1c6e107fd" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primària Vila Olímpica</div>`)[0];
+            popup_c79e6dab32884f96a0d8ffa509e98f49.setContent(html_fb113f0e375148a6a33874e1c6e107fd);
+        
+
+        marker_1298bfb7f05a4fd2a0511e99d40f3379.bindPopup(popup_c79e6dab32884f96a0d8ffa509e98f49)
+        ;
+
+        
+    
+    
+            var marker_28d7dafde2b44614abe4e125f3ffea32 = L.marker(
+                [41.42293083907828, 2.208656896009578],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_591a142d55564b6aba41ba08c6c0d55d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_635e8c783de044988923f5ba61e16442 = $(`<div id="html_635e8c783de044988923f5ba61e16442" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primària La Pau</div>`)[0];
+            popup_591a142d55564b6aba41ba08c6c0d55d.setContent(html_635e8c783de044988923f5ba61e16442);
+        
+
+        marker_28d7dafde2b44614abe4e125f3ffea32.bindPopup(popup_591a142d55564b6aba41ba08c6c0d55d)
+        ;
+
+        
+    
+    
+            var marker_0b6f4bf3304d4e8383e5769bfddfe612 = L.marker(
+                [41.38188710932366, 2.140451601838126],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_1c41acbde0404674bb43de2f956f9409 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f71d88ce8d534477b7822549d57816c3 = $(`<div id="html_f71d88ce8d534477b7822549d57816c3" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primària Numància</div>`)[0];
+            popup_1c41acbde0404674bb43de2f956f9409.setContent(html_f71d88ce8d534477b7822549d57816c3);
+        
+
+        marker_0b6f4bf3304d4e8383e5769bfddfe612.bindPopup(popup_1c41acbde0404674bb43de2f956f9409)
+        ;
+
+        
+    
+    
+            var marker_7b7e295feed44b3d9660a648196e641b = L.marker(
+                [41.45098193478274, 2.192776535534067],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_ee63d375d3714de78ca2ec2a05656d61 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_145a37d722654feb87e01f2f6dd4dc9b = $(`<div id="html_145a37d722654feb87e01f2f6dd4dc9b" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primària Trinitat Vella</div>`)[0];
+            popup_ee63d375d3714de78ca2ec2a05656d61.setContent(html_145a37d722654feb87e01f2f6dd4dc9b);
+        
+
+        marker_7b7e295feed44b3d9660a648196e641b.bindPopup(popup_ee63d375d3714de78ca2ec2a05656d61)
+        ;
+
+        
+    
+    
+            var marker_1a059ee2355a4ee899a27a621e82f4c0 = L.marker(
+                [41.43787657189986, 2.161990838601969],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_92c8fd3af8d74c17b955d16415c4283e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_18d10fb9bbdb48b4b60aa633a47c3eeb = $(`<div id="html_18d10fb9bbdb48b4b60aa633a47c3eeb" style="width: 100.0%; height: 100.0%;">Hospital Mare de Déu de la Mercè</div>`)[0];
+            popup_92c8fd3af8d74c17b955d16415c4283e.setContent(html_18d10fb9bbdb48b4b60aa633a47c3eeb);
+        
+
+        marker_1a059ee2355a4ee899a27a621e82f4c0.bindPopup(popup_92c8fd3af8d74c17b955d16415c4283e)
+        ;
+
+        
+    
+    
+            var marker_878631c268e74d8c8c92ce0a7d38f760 = L.marker(
+                [41.410518629320414, 2.1561528831078403],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_eaafb33a4aa94d3ca23b928da92bb474 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0f28901329b74c43959e39dc7bad479a = $(`<div id="html_0f28901329b74c43959e39dc7bad479a" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primària Larrard</div>`)[0];
+            popup_eaafb33a4aa94d3ca23b928da92bb474.setContent(html_0f28901329b74c43959e39dc7bad479a);
+        
+
+        marker_878631c268e74d8c8c92ce0a7d38f760.bindPopup(popup_eaafb33a4aa94d3ca23b928da92bb474)
+        ;
+
+        
+    
+    
+            var marker_dca1adc9849a4c55827121cec33f9390 = L.marker(
+                [41.410518629320414, 2.1561528831078403],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_9f848a25116b4b95ba3da47533b9205a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8536dbabc8d541689de064b6b1b48401 = $(`<div id="html_8536dbabc8d541689de064b6b1b48401" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primària Larrard</div>`)[0];
+            popup_9f848a25116b4b95ba3da47533b9205a.setContent(html_8536dbabc8d541689de064b6b1b48401);
+        
+
+        marker_dca1adc9849a4c55827121cec33f9390.bindPopup(popup_9f848a25116b4b95ba3da47533b9205a)
+        ;
+
+        
+    
+    
+            var marker_6305cc9d801a45a6b95fe34aebd410d1 = L.marker(
+                [41.39924899210352, 2.1288603299902027],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_ca1ceb4cd9bf4d96ac42a5106333cd4b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_288036288cce497fbaa9ba5423b767ae = $(`<div id="html_288036288cce497fbaa9ba5423b767ae" style="width: 100.0%; height: 100.0%;">Clínica Mi Tres Torres</div>`)[0];
+            popup_ca1ceb4cd9bf4d96ac42a5106333cd4b.setContent(html_288036288cce497fbaa9ba5423b767ae);
+        
+
+        marker_6305cc9d801a45a6b95fe34aebd410d1.bindPopup(popup_ca1ceb4cd9bf4d96ac42a5106333cd4b)
+        ;
+
+        
+    
+    
+            var marker_97989654698342be8cee72ce71f8738e = L.marker(
+                [41.3898916934532, 2.129573511198016],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_7680ed6aafe2405c963315488b015fb1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1aad920cd6da4fada5d3746494e4e767 = $(`<div id="html_1aad920cd6da4fada5d3746494e4e767" style="width: 100.0%; height: 100.0%;">Hospital de Barcelona</div>`)[0];
+            popup_7680ed6aafe2405c963315488b015fb1.setContent(html_1aad920cd6da4fada5d3746494e4e767);
+        
+
+        marker_97989654698342be8cee72ce71f8738e.bindPopup(popup_7680ed6aafe2405c963315488b015fb1)
+        ;
+
+        
+    
+    
+            var marker_a05ec9fba2af4f868b9b1d502e8d3988 = L.marker(
+                [41.4254567920414, 2.187124388138771],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_b6040daeb033498ca21acf106552f410 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dd5d7dd709c04acc9f23ecb77063df6f = $(`<div id="html_dd5d7dd709c04acc9f23ecb77063df6f" style="width: 100.0%; height: 100.0%;">Centre de Dia Serveis Geriàtrics de Barcelona *Av Meridiana</div>`)[0];
+            popup_b6040daeb033498ca21acf106552f410.setContent(html_dd5d7dd709c04acc9f23ecb77063df6f);
+        
+
+        marker_a05ec9fba2af4f868b9b1d502e8d3988.bindPopup(popup_b6040daeb033498ca21acf106552f410)
+        ;
+
+        
+    
+    
+            var marker_5a4fa7baf2924ce4835cded49ab86697 = L.marker(
+                [41.4254567920414, 2.187124388138771],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_4abbd93be47b4e6b90755007e548b768 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4f08cb695fa84e08857c2cbc23a3f965 = $(`<div id="html_4f08cb695fa84e08857c2cbc23a3f965" style="width: 100.0%; height: 100.0%;">Centre de Dia Serveis Geriàtrics de Barcelona *Av Meridiana</div>`)[0];
+            popup_4abbd93be47b4e6b90755007e548b768.setContent(html_4f08cb695fa84e08857c2cbc23a3f965);
+        
+
+        marker_5a4fa7baf2924ce4835cded49ab86697.bindPopup(popup_4abbd93be47b4e6b90755007e548b768)
+        ;
+
+        
+    
+    
+            var marker_313f7396759f46c0be39676c7637498b = L.marker(
+                [41.39249916484832, 2.15983488479965],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_576151adee3045ca882d7676522bcbb1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8c1cd1a394a042a0aba9608468183695 = $(`<div id="html_8c1cd1a394a042a0aba9608468183695" style="width: 100.0%; height: 100.0%;">Comunitat Terapèutica Clínica Llúria</div>`)[0];
+            popup_576151adee3045ca882d7676522bcbb1.setContent(html_8c1cd1a394a042a0aba9608468183695);
+        
+
+        marker_313f7396759f46c0be39676c7637498b.bindPopup(popup_576151adee3045ca882d7676522bcbb1)
+        ;
+
+        
+    
+    
+            var marker_204ebb9292ba4944bea5620583a9cd77 = L.marker(
+                [41.391325621433246, 2.1598368504335133],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_906960d3fc2b45c0af505a06c85a5d14 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d01c55f569174495a4bf528c5733932b = $(`<div id="html_d01c55f569174495a4bf528c5733932b" style="width: 100.0%; height: 100.0%;">Medicina Estètica Balmes</div>`)[0];
+            popup_906960d3fc2b45c0af505a06c85a5d14.setContent(html_d01c55f569174495a4bf528c5733932b);
+        
+
+        marker_204ebb9292ba4944bea5620583a9cd77.bindPopup(popup_906960d3fc2b45c0af505a06c85a5d14)
+        ;
+
+        
+    
+    
+            var marker_311bae6f793f48a0ade0bb29518808d4 = L.marker(
+                [41.42804936131065, 2.1434499328191],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_341f485ebc204e998f5d136a4c52a08c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ff14e25421d444988dc92a5fcaeef300 = $(`<div id="html_ff14e25421d444988dc92a5fcaeef300" style="width: 100.0%; height: 100.0%;">Centre d'Esclerosi Múltiple de Catalunya - CEMCAT</div>`)[0];
+            popup_341f485ebc204e998f5d136a4c52a08c.setContent(html_ff14e25421d444988dc92a5fcaeef300);
+        
+
+        marker_311bae6f793f48a0ade0bb29518808d4.bindPopup(popup_341f485ebc204e998f5d136a4c52a08c)
+        ;
+
+        
+    
+    
+            var marker_22944d1a90aa4bdf918a4337ba7bf099 = L.marker(
+                [41.37647582448295, 2.1601214296677766],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_08416eb5d56b43159de8f7e99a5dc06f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fb4b5b18287e4fcbb2690141d90040f2 = $(`<div id="html_fb4b5b18287e4fcbb2690141d90040f2" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primària Manso</div>`)[0];
+            popup_08416eb5d56b43159de8f7e99a5dc06f.setContent(html_fb4b5b18287e4fcbb2690141d90040f2);
+        
+
+        marker_22944d1a90aa4bdf918a4337ba7bf099.bindPopup(popup_08416eb5d56b43159de8f7e99a5dc06f)
+        ;
+
+        
+    
+    
+            var marker_1d17a1b9d87e46d6a06272e1ebe6e492 = L.marker(
+                [41.37647582448295, 2.1601214296677766],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_7e25134d2eb44da9841e473e8e9a7ec8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_95aecae9866843fcac3e124e9a512b0b = $(`<div id="html_95aecae9866843fcac3e124e9a512b0b" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primària Manso</div>`)[0];
+            popup_7e25134d2eb44da9841e473e8e9a7ec8.setContent(html_95aecae9866843fcac3e124e9a512b0b);
+        
+
+        marker_1d17a1b9d87e46d6a06272e1ebe6e492.bindPopup(popup_7e25134d2eb44da9841e473e8e9a7ec8)
+        ;
+
+        
+    
+    
+            var marker_714a87891296456aad0cc677dacee106 = L.marker(
+                [41.39646221745104, 2.156455652254697],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_fd21771b58bd499aa95880fafba1ef37 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4a45864e43484b1490d5396fa6a325e7 = $(`<div id="html_4a45864e43484b1490d5396fa6a325e7" style="width: 100.0%; height: 100.0%;">Institut Oftalmologia Gabriel Simón</div>`)[0];
+            popup_fd21771b58bd499aa95880fafba1ef37.setContent(html_4a45864e43484b1490d5396fa6a325e7);
+        
+
+        marker_714a87891296456aad0cc677dacee106.bindPopup(popup_fd21771b58bd499aa95880fafba1ef37)
+        ;
+
+        
+    
+    
+            var marker_91ab0dcf48f24cd8b186f467d380f24a = L.marker(
+                [41.40412545821543, 2.164613046569684],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_22218d56a5a641eebba708b384fe156d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_874ead63fe8a417bb45d6011d04e6c2f = $(`<div id="html_874ead63fe8a417bb45d6011d04e6c2f" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primària Pare Claret</div>`)[0];
+            popup_22218d56a5a641eebba708b384fe156d.setContent(html_874ead63fe8a417bb45d6011d04e6c2f);
+        
+
+        marker_91ab0dcf48f24cd8b186f467d380f24a.bindPopup(popup_22218d56a5a641eebba708b384fe156d)
+        ;
+
+        
+    
+    
+            var marker_ea37ac6f4c4548ae9fa2e470bee78f26 = L.marker(
+                [41.41416572459714, 2.1973408314822507],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_bb3e80d0676c4cce96e8a002c23c4781 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5fb708dde5354f2c98e7b0911024ceab = $(`<div id="html_5fb708dde5354f2c98e7b0911024ceab" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primària Sant Martí</div>`)[0];
+            popup_bb3e80d0676c4cce96e8a002c23c4781.setContent(html_5fb708dde5354f2c98e7b0911024ceab);
+        
+
+        marker_ea37ac6f4c4548ae9fa2e470bee78f26.bindPopup(popup_bb3e80d0676c4cce96e8a002c23c4781)
+        ;
+
+        
+    
+    
+            var marker_fb439ad3d68549aea198e3d78eaf0ad2 = L.marker(
+                [41.41416572459714, 2.1973408314822507],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_38ef638ed03742af9362663f6849186e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eb190311caa24353a18196328507d123 = $(`<div id="html_eb190311caa24353a18196328507d123" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primària Sant Martí</div>`)[0];
+            popup_38ef638ed03742af9362663f6849186e.setContent(html_eb190311caa24353a18196328507d123);
+        
+
+        marker_fb439ad3d68549aea198e3d78eaf0ad2.bindPopup(popup_38ef638ed03742af9362663f6849186e)
+        ;
+
+        
+    
+    
+            var marker_2d44518d4496434e83396c7d73b0c05b = L.marker(
+                [41.419029908950506, 2.178777022852733],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_55902c9c111a48e4b7d889c5c382f1cf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fd4eedd3cd4b4a0ba70666c7e2a9d56f = $(`<div id="html_fd4eedd3cd4b4a0ba70666c7e2a9d56f" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primària Guinardó</div>`)[0];
+            popup_55902c9c111a48e4b7d889c5c382f1cf.setContent(html_fd4eedd3cd4b4a0ba70666c7e2a9d56f);
+        
+
+        marker_2d44518d4496434e83396c7d73b0c05b.bindPopup(popup_55902c9c111a48e4b7d889c5c382f1cf)
+        ;
+
+        
+    
+    
+            var marker_4a659f3044274748a2249881e6ca9d98 = L.marker(
+                [41.38879799075202, 2.1454451514293984],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_49d5f093c5ac457aa691929818645204 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b0d1df33df4e4894acbc79d70a084394 = $(`<div id="html_b0d1df33df4e4894acbc79d70a084394" style="width: 100.0%; height: 100.0%;">Hospital  Universitari del Sagrat Cor</div>`)[0];
+            popup_49d5f093c5ac457aa691929818645204.setContent(html_b0d1df33df4e4894acbc79d70a084394);
+        
+
+        marker_4a659f3044274748a2249881e6ca9d98.bindPopup(popup_49d5f093c5ac457aa691929818645204)
+        ;
+
+        
+    
+    
+            var marker_cdb063f2912741c9b2324abf3aa641ff = L.marker(
+                [41.39042578488265, 2.153306420872568],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_7dcadff8fbcd46a6bd6868dadb3f1e13 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2fbbdfb295f74c2680e6619938e8cc6d = $(`<div id="html_2fbbdfb295f74c2680e6619938e8cc6d" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primària Casanova</div>`)[0];
+            popup_7dcadff8fbcd46a6bd6868dadb3f1e13.setContent(html_2fbbdfb295f74c2680e6619938e8cc6d);
+        
+
+        marker_cdb063f2912741c9b2324abf3aa641ff.bindPopup(popup_7dcadff8fbcd46a6bd6868dadb3f1e13)
+        ;
+
+        
+    
+    
+            var marker_4f8a71e05c0944cebd30a3cdc5fc9b77 = L.marker(
+                [41.39607868676644, 2.156725438556576],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_f180d92881734157ab31db7ef6b14511 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8b0a62f8494c4d16b013f22a003e398c = $(`<div id="html_8b0a62f8494c4d16b013f22a003e398c" style="width: 100.0%; height: 100.0%;">Clínica Sanza</div>`)[0];
+            popup_f180d92881734157ab31db7ef6b14511.setContent(html_8b0a62f8494c4d16b013f22a003e398c);
+        
+
+        marker_4f8a71e05c0944cebd30a3cdc5fc9b77.bindPopup(popup_f180d92881734157ab31db7ef6b14511)
+        ;
+
+        
+    
+    
+            var marker_c348b23673b54f19b197633fc9f7d043 = L.marker(
+                [41.40130002082709, 2.1424279977430216],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_bc9b0812e9a5409e978eb32857d2b867 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_867b774568b44791ae250be4c8531632 = $(`<div id="html_867b774568b44791ae250be4c8531632" style="width: 100.0%; height: 100.0%;">Centre d'Urgències d'Atenció Primària</div>`)[0];
+            popup_bc9b0812e9a5409e978eb32857d2b867.setContent(html_867b774568b44791ae250be4c8531632);
+        
+
+        marker_c348b23673b54f19b197633fc9f7d043.bindPopup(popup_bc9b0812e9a5409e978eb32857d2b867)
+        ;
+
+        
+    
+    
+            var marker_2eb8fc70b1ab46c1a2e61bf607a6bc97 = L.marker(
+                [41.38879799075202, 2.1454451514293984],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_07ebb13b48be4e659f86badd869cf551 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_110627003c1f4670942eeb958a236043 = $(`<div id="html_110627003c1f4670942eeb958a236043" style="width: 100.0%; height: 100.0%;">Centre d'Urgències d'Atenció Primària</div>`)[0];
+            popup_07ebb13b48be4e659f86badd869cf551.setContent(html_110627003c1f4670942eeb958a236043);
+        
+
+        marker_2eb8fc70b1ab46c1a2e61bf607a6bc97.bindPopup(popup_07ebb13b48be4e659f86badd869cf551)
+        ;
+
+        
+    
+    
+            var marker_0f90cc5b85264edcbaac056eb6fe616d = L.marker(
+                [41.377408215094576, 2.128505915206101],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_d5661460fbd44b4f9ca9eb8669282632 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_615363a6540743e298eb311218b16935 = $(`<div id="html_615363a6540743e298eb311218b16935" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primària Roger</div>`)[0];
+            popup_d5661460fbd44b4f9ca9eb8669282632.setContent(html_615363a6540743e298eb311218b16935);
+        
+
+        marker_0f90cc5b85264edcbaac056eb6fe616d.bindPopup(popup_d5661460fbd44b4f9ca9eb8669282632)
+        ;
+
+        
+    
+    
+            var marker_8cc49a9bfd0b4d559d3d8cf63a1f09d2 = L.marker(
+                [41.41574157238098, 2.180738533712315],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_5030f6f8e4dc455b9da3f62b04b01f4a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_34fbe92b085048c18621e4a8eba6ee16 = $(`<div id="html_34fbe92b085048c18621e4a8eba6ee16" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primària Passeig Maragall</div>`)[0];
+            popup_5030f6f8e4dc455b9da3f62b04b01f4a.setContent(html_34fbe92b085048c18621e4a8eba6ee16);
+        
+
+        marker_8cc49a9bfd0b4d559d3d8cf63a1f09d2.bindPopup(popup_5030f6f8e4dc455b9da3f62b04b01f4a)
+        ;
+
+        
+    
+    
+            var marker_297a8a5124df451fa6b08d4e5297883c = L.marker(
+                [41.44298880234272, 2.175021416842057],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_04bdfc64184445a69bd7b9f0131e6300 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4feac3374cf14317aa7edeaaedeee210 = $(`<div id="html_4feac3374cf14317aa7edeaaedeee210" style="width: 100.0%; height: 100.0%;">Fundació Hospital de Dia de Nou Barris</div>`)[0];
+            popup_04bdfc64184445a69bd7b9f0131e6300.setContent(html_4feac3374cf14317aa7edeaaedeee210);
+        
+
+        marker_297a8a5124df451fa6b08d4e5297883c.bindPopup(popup_04bdfc64184445a69bd7b9f0131e6300)
+        ;
+
+        
+    
+    
+            var marker_2a1764e0bbd4480fa4801869a7ae7e83 = L.marker(
+                [41.42627030840487, 2.1404234125837025],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_8050ebb5a2a94ac0b8f4b3bf15564013 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_717e22d794f14ff690680a962a215770 = $(`<div id="html_717e22d794f14ff690680a962a215770" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primària San Rafael</div>`)[0];
+            popup_8050ebb5a2a94ac0b8f4b3bf15564013.setContent(html_717e22d794f14ff690680a962a215770);
+        
+
+        marker_2a1764e0bbd4480fa4801869a7ae7e83.bindPopup(popup_8050ebb5a2a94ac0b8f4b3bf15564013)
+        ;
+
+        
+    
+    
+            var marker_56cbc95f5e75476db671ad913c47534d = L.marker(
+                [41.443165080225725, 2.192838290511633],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_080335fb22a640519972cfb5c70fa5cc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_938ba2e7e73249738bd7d34a819ff13b = $(`<div id="html_938ba2e7e73249738bd7d34a819ff13b" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primària Casernes</div>`)[0];
+            popup_080335fb22a640519972cfb5c70fa5cc.setContent(html_938ba2e7e73249738bd7d34a819ff13b);
+        
+
+        marker_56cbc95f5e75476db671ad913c47534d.bindPopup(popup_080335fb22a640519972cfb5c70fa5cc)
+        ;
+
+        
+    
+    
+            var marker_9065b5427a604857965cce0acf7483d3 = L.marker(
+                [41.405492406791566, 2.128377221247124],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_821c034fc0ce40b8824810e6b9eecefd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cd269eda7c034213aff84fdee11d3c5f = $(`<div id="html_cd269eda7c034213aff84fdee11d3c5f" style="width: 100.0%; height: 100.0%;">Clínica Oftalmologica Castanera</div>`)[0];
+            popup_821c034fc0ce40b8824810e6b9eecefd.setContent(html_cd269eda7c034213aff84fdee11d3c5f);
+        
+
+        marker_9065b5427a604857965cce0acf7483d3.bindPopup(popup_821c034fc0ce40b8824810e6b9eecefd)
+        ;
+
+        
+    
+    
+            var marker_47d3a9dce9a041f68b5465cb98700e28 = L.marker(
+                [41.36549941267989, 2.139637719083576],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_92d2f735315b40a3a88ab776a7e28021 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4f2eda1cb39848758507e91d39f4188e = $(`<div id="html_4f2eda1cb39848758507e91d39f4188e" style="width: 100.0%; height: 100.0%;">Hospital de Dia per Adolescents en Salut Mental</div>`)[0];
+            popup_92d2f735315b40a3a88ab776a7e28021.setContent(html_4f2eda1cb39848758507e91d39f4188e);
+        
+
+        marker_47d3a9dce9a041f68b5465cb98700e28.bindPopup(popup_92d2f735315b40a3a88ab776a7e28021)
+        ;
+
+        
+    
+    
+            var marker_28a6359334c74846be369d38911dccee = L.marker(
+                [41.38687068385529, 2.1526211977409395],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_0466155b57f743099ebb74b887505696 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_13f53d99b275407bbb4730a301e67ed8 = $(`<div id="html_13f53d99b275407bbb4730a301e67ed8" style="width: 100.0%; height: 100.0%;">Cliníca Axisclínic *Comte d'Urgell</div>`)[0];
+            popup_0466155b57f743099ebb74b887505696.setContent(html_13f53d99b275407bbb4730a301e67ed8);
+        
+
+        marker_28a6359334c74846be369d38911dccee.bindPopup(popup_0466155b57f743099ebb74b887505696)
+        ;
+
+        
+    
+    
+            var marker_45fb4d36e8ab423b9a3889847a53dfcc = L.marker(
+                [41.43308238349045, 2.1705788750932693],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_b44ccc15bc3e4ee6afc3812fc197951b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9debb6ab39834c07b8d6cf0aad5a383e = $(`<div id="html_9debb6ab39834c07b8d6cf0aad5a383e" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primària Turó</div>`)[0];
+            popup_b44ccc15bc3e4ee6afc3812fc197951b.setContent(html_9debb6ab39834c07b8d6cf0aad5a383e);
+        
+
+        marker_45fb4d36e8ab423b9a3889847a53dfcc.bindPopup(popup_b44ccc15bc3e4ee6afc3812fc197951b)
+        ;
+
+        
+    
+    
+            var marker_66a50a7f65cc44b1ac9595e6433f4043 = L.marker(
+                [41.41581540340154, 2.141880198393869],
+                {}
+            ).addTo(marker_cluster_f15a31b4852a46fcbd83fe2d080f4d55);
+        
+    
+        var popup_0e4c83ab7d35473fa61438873b2304ef = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d21506ee850c41788115e318c4dda2c9 = $(`<div id="html_d21506ee850c41788115e318c4dda2c9" style="width: 100.0%; height: 100.0%;">Centre d'Atenció Primària Vallcarca-Sant Gervasi</div>`)[0];
+            popup_0e4c83ab7d35473fa61438873b2304ef.setContent(html_d21506ee850c41788115e318c4dda2c9);
+        
+
+        marker_66a50a7f65cc44b1ac9595e6433f4043.bindPopup(popup_0e4c83ab7d35473fa61438873b2304ef)
+        ;
+
+        
+    
+</script>

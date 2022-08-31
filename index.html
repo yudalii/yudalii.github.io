@@ -72,8 +72,8 @@
     <div class="container">
       <h1>  Plotting territorial income distribution and other demographic indicators in the city of Barcelona</h1>
       <br> 
-      <p> The objective of this article is to analyze and plot choropleth maps of territorial income distribution 
-        and other demographic indicators in the city of Barcelona obtained from <a href="https://opendata-ajuntament.barcelona.cat/en/" style="color: blue">Barcelona open data repository</a> using Python's 
+      <p> The objective of this article is to analyze and plot choropleth maps of territorial income distribution and other demographic 
+        indicators in the city of Barcelona, obtained from the  <a href="https://opendata-ajuntament.barcelona.cat/en/" style="color: blue">Barcelona open data repository</a> using Python's 
         <a href="http://python-visualization.github.io/folium/" style="color: blue" >Folium</a> library. 
         Here we only present the final results, detailed technical implementation explaination is available in my  
         <a href= BCN_choropleth_maps.html style="color: blue"> Jupyter Notebook</a>, 
@@ -417,9 +417,9 @@
         By placing the mouse cursor or clicking the neighborhood you can see the associated neighborhood name and its RFD index.
       </p>
       <p>
-        <iframe id="inlineFrameExample" title="Inline Frame Example" width="400" height="500"
+        <iframe id="inlineFrameExample" title="Inline Frame Example" width="90%" height="500"
         src= "choropleth maps/bcn_renta_2017.html"> </iframe>
-        <iframe id="inlineFrameExample" title="Inline Frame Example" width="400" height="500"
+        <iframe id="inlineFrameExample" title="Inline Frame Example" width="90%" height="500"
         src= "choropleth maps/bcn_renta_2017_2.html"> </iframe>
 
       </p>
@@ -440,9 +440,9 @@
         different colorscale. 
       </p>
       <p>
-        <iframe id="inlineFrameExample" title="Inline Frame Example" width="400" height="500"
+        <iframe width="90%" height="500"
         src= "choropleth maps/bcn_renta_2007.html"> </iframe>
-        <iframe id="inlineFrameExample" title="Inline Frame Example" width="400" height="500"
+        <iframe id="inlineFrameExample" title="Inline Frame Example" width="90%" height="500"
         src= "choropleth maps/bcn_renta_change.html"> </iframe>
       </p>
       <p>   
@@ -465,9 +465,9 @@
         disposable income of these two years. 
       </p>
       <p>
-        <iframe id="inlineFrameExample" title="Inline Frame Example" width="400" height="500"
+        <iframe width="90%" height="500"
         src= "choropleth maps/disposable_income_15.html"> </iframe>
-        <iframe id="inlineFrameExample" title="Inline Frame Example" width="400" height="500"
+        <iframe width="90%" height="500"
         src= "choropleth maps/disposable_income_19.html"> </iframe>
       </p>
       <p>
@@ -492,8 +492,8 @@
       for the most recent available year 2020. 
     </p>
     <p>
-    <iframe width="45%" height="500" src= "choropleth maps/immigration_rate_20.html"> </iframe>
-    <iframe width="45%" height="500" src= "choropleth maps/birth_rate_20.html"> </iframe>
+    <iframe width="90%" height="500" src= "choropleth maps/immigration_rate_20.html"> </iframe>
+    <iframe width="90%" height="500" src= "choropleth maps/birth_rate_20.html"> </iframe>
     </p>
     <p>
       Most of the neighborhoods have immigration rate between 30 to 50 ‰ inhabitants and birth rate between 
@@ -502,16 +502,24 @@
     </p>
 
     <p>
-     The other dataset we plot is the 
+     Another intersting dataset that we plot is the 
      <a href= "https://ajuntament.barcelona.cat/estadistica/angles/Estadistiques_per_territori/Barris/Salut/Indicadors_salut_publica/t39.htm" 
-     style="color: blue">life expectancy rate</a> by five years average. The most recent one is from year 2015 to 2019. 
+     style="color: blue">life expectancy rate</a> by neighborhoods. This life expectancy rate is based on the average of 5 years period.
+     The most recent one is from year 2015 to 2019. 
 
 
     </p>
     <p>
-      <iframe width="90%" height="500" src= "choropleth maps/life expectancy_19.html"> </iframe>
-
+      <iframe width="90%" height="500" src= "choropleth maps/life_expectancy_19.html"> </iframe>
     </p>
+    <p>
+      <iframe width="95%" height="500" src= "choropleth maps/hospitals_cluster.html"> </iframe>
+    </p>
+
+    <br> 
+    <br> 
+    <h2>Conclusions</h2>
+
     <br> 
     <br> 
     <applause-button style="width: 60px;height: 60px; margin: 0 auto;"/>
