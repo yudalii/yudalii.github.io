@@ -47,16 +47,17 @@
       <h1>  Plotting territorial income distribution and other demographic indicators in the city of Barcelona</h1>
       <br> 
       <p> The objective of this article is to analyze and plot choropleth maps of territorial income distribution and other demographic 
-        indicators in the city of Barcelona, obtained from the  <a href="https://opendata-ajuntament.barcelona.cat/en/" style="color: blue">Barcelona open data repository</a> using Python's 
+        indicators in the city of Barcelona, obtained from the <a href="https://opendata-ajuntament.barcelona.cat/en/" style="color: blue">Barcelona open data repository</a> using Python's 
         <a href="http://python-visualization.github.io/folium/" style="color: blue" >Folium</a> library. 
-        Here we only present the final results, detailed technical implementation explaination is available in my  
+        Here we only present the final results. A detailed technical implementation explanation is available in my  
         <a href= BCN_choropleth_maps.html style="color: blue"> Jupyter Notebook</a>, 
-        and the source code is available in my <a href= "https://github.com/yudalii/yudalii.github.io" style="color: blue"> Github repository</a>.
+        and the source code is available in my <a href= "https://github.com/yudalii/Barcelona-Folium-maps" style="color: blue"> Github repository</a>.
       </p>
       <h2> 1. Income distribution in the city of Barcelona</h2>
       <p> The first dataset that we are going to analyze is the 
-        <a href="https://opendata-ajuntament.barcelona.cat/data/en/dataset/est-renda-familiar" style="color: blue"> Renta Familiar Disponible (RFD) index dataset</a>,
-        this dataset contains the Disposable Family Income Index by Neighborhood, the most recent one is from year 2017.
+        <a href="https://opendata-ajuntament.barcelona.cat/data/en/dataset/est-renda-familiar" style="color: blue"> Renta Familiar Disponible (RFD) index dataset</a>.
+        This dataset contains the Disposable Family Income Index by Neighborhood. The most recent one available to the public is from 2017. The table below shows the RFD index
+        of every neighborhood.
 
         <table width="1" border="0" cellspacing="2" cellpadding="0">
           <tr><td colspan="6" nowrap class="WhadsTitVar1" valign="bottom">1.&nbsp;Territorial income distribution in Barcelona (2017) </td></tr>
@@ -378,40 +379,42 @@
           <tr><td colspan="6" class="WhadsNotaVar1" valign="bottom">Source: Ajuntament de Barcelona. Oficina Municipal de Dades.</td></tr>
           <tr><td colspan="6" nowrap class="WhadsVoidVar1" valign="bottom">&nbsp;</td></tr>
           </table>
-        The RFD index of Barcelona city is 100, therefore neighborhoods with RFD index lower than 100 represent that 
-        their RFD index are below average of the city and the same logic goes with neighborhoods with RFD index higher or equall than 100. 
-        Today, Barcelona contains 73 different neighborhoods, to better illustrate the RFD index by neighborhoods, we plot this data onto a choropleth map. 
-        A choropleth map is a type of statistical thematic map that uses pseudocolor, i.e., color corresponding with an aggregate summary of a geographic 
-        characteristic within spatial enumeration units, such as population density or per-capita income.
+          The RFD index of Barcelona city is 100. Therefore, neighborhoods with a RFD index lower than 100 represent that their RFD index 
+          is below the average of the city. The same logic goes with neighborhoods with a RFD index higher or equal to 100. 
+          Today, Barcelona contains 73 different neighborhoods. To better illustrate the RFD index by neighborhood, 
+          we plot this data onto a choropleth map. A choropleth map is a type of statistical thematic map that uses pseudocolor, 
+          i.e., color corresponding with an aggregate summary of a geographic characteristic within spatial enumeration units, 
+          such as population density or per-capita income.
       </p>
       <p>
-        Here we present two different choropleth map, the one on the left have neighborhoods colored from yellow to red according to their RFD index, as illustrated by the colorscale on top of the map.  
-        Choropleth map on the right uses two different colorscale to better differentiate neighborhoods with lower 
-        than average RFD index with neighborhoods with equall or higher than average RFD index. 
-        By placing the mouse cursor or clicking the neighborhood you can see the associated neighborhood name and its RFD index.
+        Here we present two different choropleth maps. The first one has neighborhoods colored from yellow to red 
+        according to their RFD index, as illustrated by the colorscale on top of the map. The second choropleth map 
+        uses two different colorscales to better differentiate neighborhoods with a lower than average RFD index from 
+        neighborhoods with an equal or higher than average RFD index. By placing the mouse cursor or clicking on the 
+        neighborhood, you can see the associated neighborhood name and its RFD index.
       </p>
       <p>
-        <iframe id="inlineFrameExample" title="Inline Frame Example" width="100%" height="500"
+        <iframe id="inlineFrameExample" title="Inline Frame Example" width="95%" height="500"
         src= "choropleth maps/bcn_renta_2017.html"> </iframe>
         <iframe id="inlineFrameExample" title="Inline Frame Example" width="95%" height="500"
         src= "choropleth maps/bcn_renta_2017_2.html"> </iframe>
 
       </p>
-      <p> As we can observe, most of the neighborhoods in the north east or south part of the city seem to 
-        have RFD index lower than average and the highest RFD index neighborhoods are located in the north east
-        part of the city. 49 neighborhoods have below average RFD index and 24 neighborhoods have equal or higher RFD index than average.
-        The 3 highest RFD index neighborhoods are Pedralbes, les Tres Torres, and Sarrià, 
-        with RFD index of 248.8, 215.8, and 193.6 respectively. The 3 lowest RFD index neighborhoods are 
-        Ciutat Meridiana, la Marina del Prat Vermell, and Vallbona, with RFD index of 38.6, 40.0, and 40.9 respectively. 
-        These maps indicate that there is a substantial income inequality among the neighborhoods, we can check if this 
-        inequality has been increasing or decreasing over the past years by comparing with RFD index of the neighborhoods from prvious years.
+      <p> As we can observe, most of the neighborhoods in the north east or south part of the city have a RFD index 
+        lower than average, and the highest RFD index neighborhoods are located in the north east part of the city. 
+        49 neighborhoods have a below average RFD index, and 24 neighborhoods have an equal or higher RFD index than 
+        average. The 3 highest RFD index neighborhoods are Pedralbes, les Tres Torres, and Sarrià, with an RFD 
+        index of 248.8, 215.8, and 193.6 respectively. The 3 lowest RFD index neighborhoods are Ciutat Meridiana, 
+        la Marina del Prat Vermell, and Vallbona, with an RFD index of 38.6, 40.0, and 40.9, respectively. 
+        These maps indicate that there is significant income inequality among the neighborhoods. We can check if this 
+        inequality has been increasing or decreasing over the past years by comparing with RFD index datasets from 
+        previous years.
       </p>
       <p>
-        The oldest dataset available in the repository is from year <a href= "https://opendata-ajuntament.barcelona.cat/data/en/dataset/est-renda-familiar/resource/935b8e2f-996f-4829-8586-c7ddfcb9ba18" 
-        style="color: blue">2007</a>, therefore we compare the RFD index of year 2007 with year 2017 to calculate
-        the percentage changes of RFD index over the past 10 years. Choropleth map on the left below illustrates the RFD index with 2 different colorscales, 
-        choropleth map on the right illustrates the RFD percentage change over the last decade, negative and positive changes are also differentiated by 2
-        different colorscale. 
+        The oldest dataset available in the repository is from the year <a href= "https://opendata-ajuntament.barcelona.cat/data/en/dataset/est-renda-familiar/resource/935b8e2f-996f-4829-8586-c7ddfcb9ba18" 
+        style="color: blue">2007</a>. Therefore, we compare the RFD index of the year 2007 with the year 2017 to calculate
+        the percentage change of the RFD index over the past 10 years. The first choropleth map illustrates the RFD index, and
+        the second choropleth map illustrates the RFD percentage change. Both maps use two different colorscales to differentiate the neighborhoods. 
       </p>
       <p>
         <iframe width="95%" height="500"
@@ -420,22 +423,21 @@
         src= "choropleth maps/bcn_renta_change.html"> </iframe>
       </p>
       <p>   
-        The income distribution in 2007 is very similar to 2017. 50 neighborhoods 
-        have below average RFD index and 23 neighborhoods have equal or higher RFD index than average.
-        The 3 highest RFD index neighborhoods are les Tres Torres, Pedralbes, and Sant Gervasi - Galvany,
-        with RFD index of 215.3, 193.6, and 187.0 respectively. The 3 lowest RFD index neighborhoods are 
-        Baró de Viver, Can Peguera, and Vallbona, with RFD index of 44.5, 49.8, and 51.6 respectively. 
-        Some of the poorer neighborhoods had a positive RFD change such as Baró de Viver with a positive 
-        RFD change of 54.83%, and some of the richer neighborhoods had some minor negative RFD change such as
-        Vallvidrera, el Tibidabo i les Planes, with a RFD change of -1.57%. However, overall, the inequality 
-        among different neighborhoods has clearly increased over the last decade. Most neighborhoods in the 
-        north east part of the city have experienced a decrease in RFD index. In 2017, most of the
-        low income neighborhoods are even relatively poorer than 10 decades ago. 
+        The income distribution in 2007 was very similar to 2017. 50 neighborhoods have a below average RFD index, 
+        and 23 neighborhoods have an equal or higher RFD index than average. The 3 highest RFD index neighborhoods are 
+        les Tres Torres, Pedralbes, and Sant Gervasi - Galvany, with RFD index of 215.3, 193.6, and 187.0 respectively. 
+        The 3 lowest RFD index neighborhoods are Baró de Viver, Can Peguera, and Vallbona, with RFD index of 44.5, 49.8, 
+        and 51.6 respectively. Some of the low-income neighborhoods had a positive RFD change, such as Baró de Viver, 
+        with a positive RFD change of 54.83%, and some of the high-income neighborhoods had some minor negative RFD 
+        changes, such as Vallvidrera, el Tibidabo i les Planes, with a RFD change of -1.57%. However, overall, inequality 
+        among different neighborhoods has clearly increased over the last decade. Most neighborhoods in the north-east 
+        part of the city have experienced a decrease in the RFD index. Low income neighborhoods in 2007 are even 
+        relatively poorer in 2017.
       </p>
       <p>
         Besides RFD index dataset, we also have <a href= "https://ajuntament.barcelona.cat/estadistica/angles/Estadistiques_per_temes/Economia/Renda_i_tributs/Renda_disponible_llars/Anual/T012.htm" 
         style="color: blue">disposable household income per capita</a> by neighborhood available in public,
-        the oldest one is from year 2015 and the most recent one is from year 2019. Choropleth maps below indicates the 
+        the oldest one is from year 2015 and the most recent one is from year 2019. Choropleth maps below indicate the 
         disposable income of these two years. 
       </p>
       <p>
@@ -445,10 +447,10 @@
         src= "choropleth maps/disposable_income_19.html"> </iframe>
       </p>
       <p>
-        The absolute value of disposable income in 2019 is clearly higher than in 2015, however, 
-        the overall distribution is basically the same as with the RFD index choropleth map of year 2017 and 2007. 
-        Most of the highest income neighborhoods are in the district of Sarrià-Sant Gervasi and 
-        most of the lowest income neighborhoods are in Nou barris. 
+        The absolute value of disposable income in 2019 is clearly higher than in 2015. However, the overall distribution 
+        is basically the same as with the RFD index choropleth map of 2017 and 2007. Most of the highest income neighborhoods 
+        are in the district of Sarrià-Sant Gervasi, and most of the lowest income neighborhoods are in Nou Barris, 
+        which is basically the same as in the previous RFD index maps.
       </p>
 
       <br> 
@@ -457,53 +459,54 @@
       <h2>  2. Other demographic and relevant indicators in the city of Barcelona</h2>
     <p>
       In this section, we plot other demographic and relevant indicators. The firs two dataset we use is the 
-      <a href= "https://opendata-ajuntament.barcelona.cat/data/en/dataset/est-demo-taxa-immigracio" 
-      style="color: blue"> Immigration registration rate</a> (‰ inhabitants) and 
+      <a href="https://opendata-ajuntament.barcelona.cat/data/en/dataset/est-demo-taxa-immigracio" 
+      style="color: blue">Immigration registration rate</a> (‰ inhabitants) and 
       <a href= "https://opendata-ajuntament.barcelona.cat/data/en/dataset/est-demo-taxa-natalitat" 
-      style="color: blue">Birth rate</a> (‰ inhabitants) in the city of Barcelona. 
-      These two rate is the relation between the number of immigration or birth registration in one year 
-      and the population of the same year per thousand inhabitants. Choropleth maps below plots these two rates
-      for the most recent available year 2020. 
+      style="color: blue">Birth rate</a> (‰ inhabitants) in the city of Barcelona.
+      These two rates are the relation between the number of immigration or birth registrations in one year and the 
+      population of that same year per thousand inhabitants. The Choropleth maps below plot these two rates for the 
+      most recent available year, 2020. 
     </p>
     <p>
     <iframe width="95%" height="500" src= "choropleth maps/immigration_rate_20.html"> </iframe>
     <iframe width="95%" height="500" src= "choropleth maps/birth_rate_20.html"> </iframe>
     </p>
     <p>
-      Most of the neighborhoods have immigration rate between 30 to 50 ‰ inhabitants and birth rate between 
-      4 to 8 ‰ inhabitants. Compared to the income choropleth maps above, immigration and birth rate do not seem to 
-      have a clear correlationship with income level of the neighborhoods. The highest immigration rate is in a low
-      income neighborhood, el Barri Gòtic, and the lowest immigration rate is also in also in a low
-      income neighborhood, Can Peguera. Most of the highest birth rates are in low income neighborhoods, but, there 
-      are also plenty of low income neighborhoods with very low birth rates. 
+      Most of the neighborhoods have an immigration rate between 30 to 50 per thousands inhabitants and a birth rate between 
+      4 to 8 per thousands inhabitants. Compared to the income choropleth maps above, immigration and birth rates do not seem 
+      to have a clear correlation with the income level of the neighborhoods. The highest immigration rate is in a 
+      low-income neighborhood, el Barri Gòtic, and the lowest immigration rate is also in a low-income neighborhood, 
+      Can Peguera. Most of the highest birth rates are in low-income neighborhoods, but there are also plenty of 
+      low-income neighborhoods with very low birth rates.
     </p>
 
     <p>
-     Another intersting dataset that we can plot is the 
+      Finally, we plot the 
      <a href= "https://ajuntament.barcelona.cat/estadistica/angles/Estadistiques_per_territori/Barris/Salut/Indicadors_salut_publica/t39.htm" 
-     style="color: blue">life expectancy rate</a> by neighborhoods. This life expectancy rate is based on the average of 5 years period.
-     The most recent one is from year 2015 to 2019. 
+     style="color: blue">life expectancy rate</a> by neighborhoods. 
+     The most recent one available in public is from the period of 2015 to 2019. 
     </p>
     <p>
       <iframe width="95%" height="500" src= "choropleth maps/life_expectancy_19.html"> </iframe>
     </p>
     <p>
-      Life expectancy difference among neighborhoods is pretty significant, with lowest neighborhood having only 78.1 years of
-      liefe expectancy and highest neighborhood 87.7 years of life expectancy.  
-      Most of the high income neighborhoods have high life expectancy, with Vallvidrera, el Tibidabo i les Planes as an exception.
-      Most part of the city, including the majority of neighborhoods with below average RFD index have a life expectancy around 85 years.
-      The 3 lowest life expectancy neighborhoods are in the lowest income neighborhoods, which are Vallbona, 
-      la Trinitat Nova, and la Marina del Prat Vermell, with life exectancy of 78.1, 79.6, and 79.8 years respectively. 
-      The 3 highest life expectancy neighborhoods are Pedralbes, la Vila Olímpica del Poblenou, and
-      la Maternitat i Sant Ramon, with life exectancy of 87.7, 87.4, and 86.7 years respectively. Their corrsponding 
-      RFD index in year 2017 are, 248.8, 164.2, and 114.2 respectively. 
+      The life expectancy difference among neighborhoods is pretty significant, with the lowest neighborhood having 
+      only 78.1 years of life expectancy and the highest neighborhood having 87.7 years of life expectancy. 
+      Most of the high-income neighborhoods have a high life expectancy, with Vallvidrera, el Tibidabo i les Planes as 
+      an exception. Most parts of the city, including the majority of neighborhoods with a below average RFD index, 
+      have a life expectancy of around 85 years. The 3 lowest life expectancy neighborhoods are in the lowest income 
+      neighborhoods, which are Vallbona, la Trinitat Nova, and la Marina del Prat Vermell, with life expectancies of 78.1, 
+      79.6, and 79.8 years, respectively. The 3 highest life expectancy neighborhoods are Pedralbes, 
+      la Vila Olímpica del Poblenou, and la Maternitat i Sant Ramon, with life expectancies of 87.7, 87.4, and 86.7 years, 
+      respectively. Their corresponding RFD indexes in the year 2017 are, 248.8, 164.2, and 114.2, respectively.
     </p>
     <p>
-      Finally, we plot a cluster map of <a href= "https://opendata-ajuntament.barcelona.cat/data/en/dataset/sanitat-hospitals-atencio-primaria" 
+      To check if the life expectancy is related to the number of hospitals and health centers in the neighborhood,
+      we plot a cluster map of <a href= "https://opendata-ajuntament.barcelona.cat/data/en/dataset/sanitat-hospitals-atencio-primaria" 
       style="color: blue">hospitals and primary health services of the city of Barcelona</a>. 
       Most of the hospitals and primary health services are in the center of the city, high income areas seem to have few 
-      hospitals and primary health services more than low income areas, from my perspective this difference does 
-      not seem to be very significant and no further insights can be drawn from the cluster map. 
+      hospitals and primary health services more than low income areas, however, this difference does 
+      not seem to be very significant. 
 
     </p>
     <p>
@@ -514,17 +517,22 @@
     <br> 
     <h2>Final words</h2>
     <p>
-     In conlcusion, in this article we have provided some choropleth maps to illustrate some intersting statistics in the 
-     city of Barcelona, some observations are also provided based on the results of the maps. The main goal of this article
-     is to introduce a powerful visualization technique to help visualize lenghty infomations, 
+      In conclusion, in this article we have provided some choropleth maps to illustrate some interesting statistics in 
+      the city of Barcelona. Some observations are also provided based on the results of the maps. 
+      The main goal of this article is to introduce a powerful visualization technique to help visualize lengthy 
+      information in a more accessible way. The income distribution dataset that we used has been placed by Open Data BCN 
+      into the United Nations Sustainable Development Goals 1: No Poverty and Goals 10: Reduced Inequality. 
+      As we have observed, even neighborhoods within the same city can have significant income inequality. 
+      Furthermore, when compared to historical data, we can see that income inequality has been increasing over the past 
+      years. Therefore, more efforts are needed to achieve the reduced inequality goal.    
     </p>
     <p>
-      Thank you for reading until here! Feel free to contact me for discussion or any doubt regarding the code!
+      Thank you for reading this far! Feel free to contact me for discussion or any doubts regarding the code!
     </p>
 
     <br> 
     <br> 
-<p>
+<p> P.S. if you like this article, you can give it a clap here:
   <applause-button style="width: 50px;height: 50px; margin: 0 auto;"/>
 </p>
 </div>
